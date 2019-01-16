@@ -10,5 +10,5 @@ RUN ls -l /usr/bin/java && java -version
 
 COPY . /var/www/java
 WORKDIR /var/www/java
-RUN javac Sample.java
-CMD ["java", "Sample"]
+RUN javac ConverterApplication.java
+CMD ["java", "ConverterApplication"]
