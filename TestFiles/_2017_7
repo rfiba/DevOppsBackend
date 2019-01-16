@@ -1,0 +1,193 @@
+Z ((Definicja całki oznaczonej Riemanna|#Calka_R|definicji całki oznaczonej Riemanna|userDesc)) wynika, że jeżeli {OPENAGHMATHJAX()} f:[a,b] \to \mathbb{R} {OPENAGHMATHJAX} jest funkcją ciągłą i nieujemną w przedziale {OPENAGHMATHJAX()} [a, b] {OPENAGHMATHJAX}, to całka {OPENAGHMATHJAX()} \int_a^b f(x) dx{OPENAGHMATHJAX} jest równa polu {OPENAGHMATHJAX()}P{OPENAGHMATHJAX} figury ograniczonej przez wykres funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX}, oś {OPENAGHMATHJAX()}OX{OPENAGHMATHJAX} oraz proste {OPENAGHMATHJAX()}x=a{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}x=b{OPENAGHMATHJAX}. Tak zadaną figurę, którą możemy opisać jako zbiór
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\{(x, y) \in \mathbb{R}^2: \, 0\le y \le f(x), \, a \le x \le b\},{OPENAGHMATHJAX}
+nazywamy __trapezem krzywoliniowym__. Jeżeli {OPENAGHMATHJAX()} f(x) \le 0 {OPENAGHMATHJAX} dla {OPENAGHMATHJAX()} x \in [a, b] {OPENAGHMATHJAX}, to {OPENAGHMATHJAX()}P = -\int_a^b f(x) dx.{OPENAGHMATHJAX} W rezultacie dla dowolnej funkcji ciągłej {OPENAGHMATHJAX()}f:[a,b] \to \mathbb{R}{OPENAGHMATHJAX} prawdziwy jest następujący związek:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P = \int\limits_a^b |f(x)| dx.{OPENAGHMATHJAX}
+{img fileId="1313" thumb="y" rel="box[g]"}
+
+{OPENAGHEXAMPLE()}
+Obliczmy pole {OPENAGHMATHJAX()}P{OPENAGHMATHJAX} obszaru zawartego pomiędzy wykresami funkcji {OPENAGHMATHJAX()} f(x)=\sqrt{x+1}{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}g(x) = (x-1)^2{OPENAGHMATHJAX}, gdzie {OPENAGHMATHJAX()} x \in [-1, 1], {OPENAGHMATHJAX} oraz osią {OPENAGHMATHJAX()}OX{OPENAGHMATHJAX}. Zauważmy, że rozpatrywana figura jest sumą dwóch trapezów krzywoliniowych {OPENAGHMATHJAX()}T_1{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}T_2{OPENAGHMATHJAX}:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}T_1=\{(x, y) \in \mathbb{R}^2: \,0 \le y \le \sqrt{x+1}, \, x \in [-1, 0]\}, \quad T_2=\{(x, y) \in \mathbb{R}^2: \,0 \le y \le (x-1)^2, \, x \in [0, 1]\},{OPENAGHMATHJAX}
+więc jej pole {OPENAGHMATHJAX()}P{OPENAGHMATHJAX} jest równe sumie {OPENAGHMATHJAX()}P_{T_1} + P_{T_2}{OPENAGHMATHJAX} pól tych trapezów. Korzystając z interpretacji geometrycznej całki oznaczonej, otrzymujemy
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \begin{aligned} P_{T_1} &= \int \limits_{-1}^{0} \sqrt{x +1} dx=\frac{2}{3}(x+1)^{\frac{3}{2}}\Big|_{-1}^0=\frac{2}{3}, \\  P_{T_2} &= \int\limits_{0}^{1} (x-1)^2 dx= \frac{1}{3}(x-1)^3\Big|_{0}^1= \frac{1}{3}. \end{aligned}{OPENAGHMATHJAX}
+Szukane pole wynosi zatem {OPENAGHMATHJAX()}P = \frac{2}{3} +\frac{1}{3} = 1.{OPENAGHMATHJAX}
+{img fileId="1314" thumb="y" rel="box[g]"}
+
+{OPENAGHEXAMPLE}
+{OPENAGHEXAMPLE()} Obliczmy pole obszaru ograniczonego przez elipsę o półosiach {OPENAGHMATHJAX()}a{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}b{OPENAGHMATHJAX} ({OPENAGHMATHJAX()} a, b >0 {OPENAGHMATHJAX}) daną równaniem
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\frac{x^2}{a^2}+\frac{y^2}{b^2}=1.{OPENAGHMATHJAX}
+
+{img fileId="1411" thumb="y" rel="box[g]"}
+
+Na początku zauważmy, że rozważany obszar jest symetryczny względem osi układu współrzędnych, a więc możemy go podzielić na cztery obszary o identycznych polach. Pole części leżącej w pierwszej ćwiartce układu współrzędnych zawarte jest między osiami {OPENAGHMATHJAX()}OX{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}OY{OPENAGHMATHJAX} oraz częścią krzywej zadanej przepisem
+{OPENAGHMATHJAX(type="block" isNumeration="no")}f(x)=b\sqrt{1-\frac{x^2}{a^2}}, \quad \text{gdzie} \quad x \in [0,a].{OPENAGHMATHJAX}
+Jest to więc pole figury będącej trapezem krzywoliniowym. Wówczas {OPENAGHMATHJAX()}P = 4P_1,{OPENAGHMATHJAX} gdzie
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P_1= \int\limits_0^a f(x)dx = b \int\limits_0^a \sqrt{1-\frac{x^2}{a^2}}dx.{OPENAGHMATHJAX}
+Obliczmy tę całkę poprzez zamianę zmiennych w całce oznaczonej. Niech więc
+{OPENAGHMATHJAX(type="block" isNumeration="no")}t=\arcsin \frac{x}{a} \quad \text{dla}\quad x \in [0,a].{OPENAGHMATHJAX}
+Zauważmy, że {OPENAGHMATHJAX()} \frac{x}{a} \in [0,1] {OPENAGHMATHJAX}, czyli {OPENAGHMATHJAX()}\frac{x}{a}{OPENAGHMATHJAX} zawiera się w dziedzinie funkcji cyklometrycznej arcus sinus, a więc nowa zmienna {OPENAGHMATHJAX()}t{OPENAGHMATHJAX} jest poprawnie określona. Ponieważ funkcja arcus sinus jest funkcją rosnącą, to jeżeli {OPENAGHMATHJAX()}x{OPENAGHMATHJAX} zmienia się od {OPENAGHMATHJAX()}0{OPENAGHMATHJAX} do {OPENAGHMATHJAX()}a{OPENAGHMATHJAX}, to wartości {OPENAGHMATHJAX()}t{OPENAGHMATHJAX} rosną od {OPENAGHMATHJAX()}0{OPENAGHMATHJAX} do {OPENAGHMATHJAX()} \frac{\pi}{2} {OPENAGHMATHJAX}. Mamy więc
+$$$openaghTableAttributeS$$$anchor="etyk1"&caption="Zmiana wartości granic całkowania, gdy {OPENAGHMATHJAX (type="inline" isNumeration="no")}(t= \arcsin \frac{x}{a}){OPENAGHMATHJAX}"$$$openaghTableAttributeE$$$
+||{OPENAGHMATHJAX()}x{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}0{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}a{OPENAGHMATHJAX}   
+{OPENAGHMATHJAX()}t{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}0{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}\frac{\pi}{2}{OPENAGHMATHJAX} 
+||
+Wówczas
+{OPENAGHMATHJAX(type="block" isNumeration="no")}x=a\sin t \quad \text{dla}\quad t \in \left[0, \frac{\pi}{2}\right],{OPENAGHMATHJAX}
+a więc 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}dx = a\cos t \,dt.{OPENAGHMATHJAX} 
+Powołując się na twierdzenie o całkowaniu przez podstawienie, otrzymujemy
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned} P &= 4b \int\limits_0^{\frac{\pi}{2}} \sqrt{1-\sin^2 t} \, a \cos t dt=4ab \int\limits_0^{\frac{\pi}{2}} \cos^2 t dt=4ab \int\limits_0^{\frac{\pi}{2}} \frac{1}{2} (1+\cos 2t) dt \\ &= 2ab \Big(t+ \frac{\sin 2t}{2}\Big) \Big|_{0}^{\frac{\pi}{2}}=2ab \Big( \frac{\pi}{2}+ \frac{\sin \pi}{2} - 0 \Big)= \pi ab. \end{aligned}{OPENAGHMATHJAX}
+Ostatecznie pole figury ograniczonej przez elipsę o półosiach {OPENAGHMATHJAX()}a{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}b{OPENAGHMATHJAX} wynosi {OPENAGHMATHJAX()}\pi ab{OPENAGHMATHJAX}.
+{OPENAGHEXAMPLE}
+{OPENAGHCONCLUSION(name="o polu figury ograniczonej przez wykresy dwóch funkcji oraz proste pionowe")}
+Jeżeli {OPENAGHMATHJAX()} f:[a,b] \to \mathbb{R} {OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()} g:[a,b] \to \mathbb{R} {OPENAGHMATHJAX} są funkcjami ciągłymi, a ponadto {OPENAGHMATHJAX()}f(x) \leq g(x){OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()} x \in [a,b] {OPENAGHMATHJAX}, to pole {OPENAGHMATHJAX()}P{OPENAGHMATHJAX} figury ograniczonej przez wykresy tych funkcji oraz proste {OPENAGHMATHJAX()}x=a{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}x=b{OPENAGHMATHJAX} wyraża się wzorem
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P=\int\limits_a^b (g(x)-f(x))dx.{OPENAGHMATHJAX}
+{OPENAGHCONCLUSION}
+{img fileId="1316" thumb="y" rel="box[g]"}
+
+{OPENAGHEXAMPLE()}
+Znajdźmy pole figury zawartej między wykresami funkcji {OPENAGHMATHJAX()} f(x) = e^{-x} {OPENAGHMATHJAX} i {OPENAGHMATHJAX()} g(x) = e^x {OPENAGHMATHJAX} oraz prostą {OPENAGHMATHJAX()}x=1.{OPENAGHMATHJAX}
+{img fileId="1456" thumb="y" rel="box[g]"}
+
+Dla każdego {OPENAGHMATHJAX()} x \in [0,1] {OPENAGHMATHJAX} zachodzi nierówność {OPENAGHMATHJAX()}f(x)\le g(x),{OPENAGHMATHJAX} więc szukane pole obliczamy w następujący sposób:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P=\int\limits_0^1 \, (e^x - e^{-x})\, dx = (e^x + e^{-x})\Big|_0^1 = e + e^{-1} - 2.{OPENAGHMATHJAX}
+{OPENAGHEXAMPLE}
+{OPENAGHEXAMPLE()}
+Obliczmy pole obszaru zawartego między parabolami o równaniach
+{OPENAGHMATHJAX(type="block" isNumeration="no")}x^2 = 2py \quad \text{oraz} \quad y^2 = 2px,{OPENAGHMATHJAX}
+gdzie {OPENAGHMATHJAX()}p{OPENAGHMATHJAX} jest ustaloną liczbą dodatnią. 
+{img fileId="1318" thumb="y" rel="box[g]"}
+
+Rozwiązując układ równań
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\left\{ \begin{array}{l} x^2 = 2py \\ y^2 = 2px \end{array} \right.{OPENAGHMATHJAX}
+znajdujemy punkty przecięcia obu parabol, mające współrzędne {OPENAGHMATHJAX()} (0,0) {OPENAGHMATHJAX} i {OPENAGHMATHJAX()} (2p,2p).{OPENAGHMATHJAX} Zauważmy, że obszar, którego pole chcemy obliczyć, zawarty jest między wykresami funkcji
+{OPENAGHMATHJAX(type="block" isNumeration="no")}f(x) = \frac{1}{2p} x^2 \quad \text{oraz} \quad g(x) = \sqrt{2px}, \quad \text{ gdzie } \quad x \in [0,2p].{OPENAGHMATHJAX}
+Ponieważ {OPENAGHMATHJAX()}f(x) \le g(x){OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()} x \in [0, 2p] {OPENAGHMATHJAX}, to szukane pole wyraża się wzorem 
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \begin{aligned} P & = \int\limits_0^{2p} (g(x)-f(x))dx = \int\limits_0^{2p} \left(\sqrt{2px} - \frac{1}{2p} x^2 \right)dx \\	 & = \sqrt{2p} \int\limits_0^{2p} x^{\frac{1}{2}}dx - \frac{1}{2p} \int\limits_0^{2p} x^2 dx = \sqrt{2p} \cdot \frac{2}{3} x^{\frac{3}{2}} \Big|^{2p}_0 - \frac{1}{2p}  \cdot \frac{x^3}{3} \Big|^{2p}_0 \\	 & = \frac{2}{3} (2p)^2 - \frac{1}{6p} (2p)^3 = \frac{4}{3}p^2. \end{aligned} {OPENAGHMATHJAX}
+
+{OPENAGHEXAMPLE}
+
+Aby obliczyć pole figury płaskiej przy pomocy całki oznaczonej, w pewnych sytuacjach warto jest całkować względem zmiennej \(y\) zamiast zmiennej \(x\). Pozwala to uniknąć dzielenia danego obszaru na mniejsze obszary oraz niepotrzebnego obliczania kilku całek.
+
+{OPENAGHEXAMPLE()}
+Pokażemy drugi sposób na znalezienie pola obszaru z przykładu 1. Zauważmy (rys. 2), że zadany obszar jest zbiorem 
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \{(x,y) \in \mathbb{R}^2: \,y^2 - 1 \le x \le -\sqrt{y} + 1, \, y \in [0, 1] \}, {OPENAGHMATHJAX}
+a jego pole obliczamy w następujący sposób:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P = \int\limits_0^1 \, (-\sqrt{y} + 1 - y^2 + 1) \, dy = \Big(-\frac{2}{3} y^{\frac{3}{2}} - \frac{1}{3} y^3 + 2y\Big)\Big|_0^1 = -\frac{2}{3} - \frac{1}{3} + 2 = 1.{OPENAGHMATHJAX}
+{OPENAGHEXAMPLE}
+Omówimy teraz sposób wyznaczania pola figury ograniczonej przez krzywą zadaną parametrycznie. Najpierw jednak podajmy definicję takiej krzywej.
+ 
+{OPENAGHDEFINITION(name="Krzywa zadana parametrycznie" anchor="def1-kzparam")}
+Mówimy, że \(\Gamma\) jest __krzywą zadaną parametrycznie__, jeżeli istnieją takie funkcje ciągłe {OPENAGHMATHJAX()} \varphi: [\alpha,\beta] \to \mathbb{R} {OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()} \psi: [\alpha,\beta] \to \mathbb{R} {OPENAGHMATHJAX}, że
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\Gamma=\{(x,y) \in \mathbb{R}^2: x =\varphi(t), y=\psi(t) \text{ dla } t \in [\alpha,\beta]\}.{OPENAGHMATHJAX}
+{OPENAGHDEFINITION}
+
+{openaghtheorem name="o polu obszaru ograniczonego łukiem krzywej zadanej parametrycznie" assumptions="" thesis="
+Niech \(\Gamma\) będzie krzywą zadaną parametrycznie, jak jest to opisane w definicji ((Automatycznie|#def1-kzparam)). Załóżmy dodatkowo, że funkcja \( \varphi \) jest rosnąca i ma w każdym punkcie przedziału {OPENAGHMATHJAX()} [\alpha,\beta] {OPENAGHMATHJAX} ciągłą pochodną, a funkcja \(\psi\) jest nieujemna.
+Pole \(P\) obszaru ograniczonego łukiem krzywej \(\Gamma\), odcinkiem osi OX oraz prostymi \(x=a\), \(x=b\), gdzie \( a = \varphi (\alpha) \), \( b = \varphi (\beta) \), wyraża się wzorem
+{OPENAGHMATHJAX(type="block" isNumeration="no")} P=\int\limits_{\alpha}^{\beta} \psi(t) \varphi^{\prime}(t) dt.{OPENAGHMATHJAX}
+" anchor="tw_1_pfp"}
+
+__DOWÓD__ 
+W pierwszym kroku dowodu wykażemy, że przy przyjętych założeniach możemy wyrazić krzywą \(\Gamma\) jako wykres funkcji ciągłej zmiennej \(x\) na przedziale {OPENAGHMATHJAX()} [a,b]{OPENAGHMATHJAX}. Istotnie, ponieważ funkcja \( \varphi \) jest rosnąca w przedziale {OPENAGHMATHJAX()}[\alpha, \beta], {OPENAGHMATHJAX} to
+{OPENAGHMATHJAX(type="block" isNumeration="no")}a = \varphi (\alpha) \le \varphi (\beta) = b,{OPENAGHMATHJAX}
+a ponadto funkcja ta jest odwracalna. To z kolei implikuje, że {OPENAGHMATHJAX(type="inline")}t = \varphi^{-1} (x){OPENAGHMATHJAX} dla {OPENAGHMATHJAX()} x \in [a,b] {OPENAGHMATHJAX} (gdzie {OPENAGHMATHJAX(type="inline")}\varphi^{-1}{OPENAGHMATHJAX} oznacza funkcję odwrotną do \(\varphi\)), co po podstawieniu do równania \( y=\psi(t) \) daje
+{OPENAGHMATHJAX(type="block" isNumeration="no")} y = \psi(\varphi^{-1} (x)) \quad \text{ dla } \quad x \in [a, b].{OPENAGHMATHJAX}
+Dalej, skoro funkcja \(\psi\) jest nieujemna, to w konsekwencji funkcja \(y\) zależna od zmiennej \(x\) przyjmuje wartości nieujemne. Dzięki temu pole rozpatrywanego obszaru możemy obliczyć, stosując wzór
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P=\int\limits_a^b y(x) dx = \int\limits_a^{b} \psi(\varphi^{-1} (x)) dx.{OPENAGHMATHJAX}
+Aby obliczyć ostatnią całkę, zastosujmy twierdzenie o całkowaniu przez podstawienie dla {OPENAGHMATHJAX(type="inline")}t= \varphi^{-1}(x){OPENAGHMATHJAX}, pamiętając przy tym 
+o stosownej zmianie granic całkowania. Z równania \( x=\varphi(t) \), gdzie {OPENAGHMATHJAX()} t \in [\alpha, \beta],{OPENAGHMATHJAX} dostajemy {OPENAGHMATHJAX(type="inline")}dx=\varphi^{\prime}(t)dt{OPENAGHMATHJAX}. W rezultacie
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P = \int\limits_{\alpha}^{\beta} \psi(t)\varphi^{\prime}(t)dt.{OPENAGHMATHJAX}
+__CND.__ 
+
+
+
+{OPENAGHEXAMPLE()} Obliczymy pole obszaru ograniczonego osią \(OX\) i jednym łukiem krzywej zwanej __cykloidą__ , która zadana jest równaniami parametrycznymi
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \left\{ \begin{array}{l} x=\varphi(t):= a(t - \sin t),  \\	 y = \psi(t):=a(1 - \cos t), \end{array} \right. {OPENAGHMATHJAX}
+gdzie \( a\) jest ustaloną liczbą dodatnią. Wyjaśnijmy, że cykloida to krzywa opisująca tor ruchu punktu leżącego na obwodzie koła o promieniu \( a\), które toczy się bez poślizgu po prostej. Zauważmy, że wartości \( y=\psi(t) \) powtarzają się cyklicznie, gdy parametr \(t\) przebiega każdy z przedziałów {OPENAGHMATHJAX()}[2k \pi, 2(k+1)\pi],{OPENAGHMATHJAX} gdzie \( k \) jest liczbą całkowitą. Dla naszych potrzeb wybierzmy jeden z takich przedziałów, np. {OPENAGHMATHJAX()} [0, 2\pi].{OPENAGHMATHJAX}
+
+{img fileId="1319" thumb="y" rel="box[g]"}
+
+Zauważmy, że {OPENAGHMATHJAX(type="inline")}\varphi^{\prime}(t) = \psi(t) \ge 0{OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()} t \in [0, 2\pi], {OPENAGHMATHJAX} więc spełnione są założenia twierdzenia ((Automatycznie|#tw_1_pfp)). Na jego podstawie otrzymujemy
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \begin{aligned} P & = \int\limits_0^{2\pi} \psi(t)\varphi^{\prime}(t)dt = \int\limits_0^{2\pi} a(1 - \cos t) \cdot a(1 - \cos t) dt  \\	 & = a^2 \int\limits_0^{2\pi} (1 - \cos t)^2 dt = a^2 \int\limits_0^{2\pi} (1 - 2 \cos t + \cos^2 t) dt \\ & =  a^2\left( (t - 2 \sin t)\Big|_0^{2\pi} +  \int\limits_0^{2\pi} \frac{1}{2}(1 + \cos 2t) dt \right)\\  & = a^2\left( 2\pi + \frac{1}{2}\left(t + \frac{\sin2t }{2} \right) \Big|_0^{2\pi}\right) =a^2(2\pi + \pi) = 3\pi a^2. \end{aligned} {OPENAGHMATHJAX} 
+{OPENAGHEXAMPLE}
+
+Jak wiadomo, położenie punktu na płaszczyźnie można określić dzięki wprowadzeniu na płaszczyźnie __kartezjańskiego prostokątnego układu współrzędnych__. Wówczas położenie punktu \(P\) jest jednoznacznie określone poprzez podanie pary {OPENAGHMATHJAX()}(x_P,y_P){OPENAGHMATHJAX}, gdzie \(x_P\) jest współrzędną tego punktu względem osi \(OX\), zaś \(y_P\) względem osi \(OY\).
+
+{img fileId="1320" thumb="y" rel="box[g]"}
+
+Jednakże położenie punktu \(P\) na płaszczyźnie można też określić w inny sposób - dzięki wprowadzeniu tzw. __biegunowego (polarnego) układu współrzędnych__. Jest ono jednoznacznie określone poprzed podanie odległości od pewnego wyróżnionego na płaszczyźnie punktu zwanego __biegunem__  oraz poprzez podanie kąta \(\varphi\) pomiędzy półprostą o początku w biegunie i przechodzącą przez punkt \(P\) a inną wyróżnioną półosią o początku w biegunie, zwaną półosią biegunową. (Kąty skierowane przeciwnie do ruchu wskazówek zegara są dodatnie, a zgodnie z ruchem wskazówek zegara są ujemne).
+
+{img fileId="1459" thumb="y" rel="box[g]"}
+
+Jeżeli umieścimy biegun w punkcie \( (0,0) \), czyli w początku układu kartezjańskiego, zaś jako półoś biegunową przyjmiemy półoś dodatnią osi \(OX\), to wówczas związki między obydwoma układami wyrażą się w następujący sposób:
+
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \left\{ \begin{array}{l} \frac{x}{r}=\cos \varphi,  \\	 \frac{y}{r} = \sin \varphi. \end{array} \right. {OPENAGHMATHJAX}
+
+{img fileId="1458" thumb="y" rel="box[g]"}
+
+W rezultacie
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \left\{ \begin{array}{l} x= r \cos \varphi, \\ y = r \sin \varphi. \end{array} \right. {OPENAGHMATHJAX}
+
+{OPENAGHEXAMPLE()}
+Równanie półokręgu o środku w punkcie \( (0,0) \) i promieniu \(4\) ma postać \(x^2+y^2=4\), przy czym {OPENAGHMATHJAX()}y \geq 0.{OPENAGHMATHJAX}
+Ta sama krzywa we współrzędnych biegunowych ma równanie \( r=2 \), przy czym {OPENAGHMATHJAX()}\varphi \in [0, \pi].{OPENAGHMATHJAX}
+{OPENAGHEXAMPLE}
+
+{OPENAGHEXAMPLE()}
+Krzywa zadana równaniem \( (x^2+y^2)^2=2xy \) ze względu na związki {OPENAGHMATHJAX()} x= r \cos \varphi,{OPENAGHMATHJAX} {OPENAGHMATHJAX()} y = r \sin \varphi {OPENAGHMATHJAX} ma we współrzędnych biegunowych równanie
+{OPENAGHMATHJAX(type="block" isNumeration="no")}r^4=2r^2 \sin \varphi \cos \varphi,{OPENAGHMATHJAX}
+czyli
+{OPENAGHMATHJAX(type="block" isNumeration="no")}r^2=\sin 2\varphi.{OPENAGHMATHJAX}
+{OPENAGHEXAMPLE}
+
+
+Omówimy teraz, w jaki sposób można obliczyć pole figury ograniczonej, której fragment brzegu jest zadany za pomocą współrzędnych biegunowych.
+
+{OPENAGHDEFINITION(name="Krzywa zadana biegunowo")}
+Mówimy, że \(\Gamma\) jest __krzywą zadaną biegunowo__ , jeżeli istnieje nieujemna funkcja ciągła {OPENAGHMATHJAX()} r: [\alpha,\beta] \to \mathbb{R} {OPENAGHMATHJAX} taka, że
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\Gamma=\{ (r,\phi) \in \mathbb{R}^2: r = r(\phi), \phi \in [\alpha, \beta] \}.{OPENAGHMATHJAX}
+{OPENAGHDEFINITION}
+
+Zauważmy, że krzywą zadaną biegunowo można przedstawić w następujący sposób w postaci parametrycznej (w zależności od parametru \(\phi\)):
+{OPENAGHMATHJAX(type="block" isNumeration="no")} x= r(\phi) \cos \phi \quad \text{oraz} \quad y= r(\phi) \sin \phi, \quad \text{gdzie} \quad \phi \in [\alpha, \beta]. {OPENAGHMATHJAX}
+Niech {OPENAGHMATHJAX()} O=(0,0),{OPENAGHMATHJAX} {OPENAGHMATHJAX()}A=(r(\alpha), \alpha),{OPENAGHMATHJAX} {OPENAGHMATHJAX()}B=(r(\beta), \beta) {OPENAGHMATHJAX}  oraz załóżmy, że {OPENAGHMATHJAX()} 0 \lt \beta - \alpha \lt 2\pi.{OPENAGHMATHJAX} Wtedy promienie wodzące o amplitudach \(\alpha\) i \(\beta\), czyli odcinki {OPENAGHMATHJAX(type="inline")}\overline{OA}{OPENAGHMATHJAX} i {OPENAGHMATHJAX(type="inline")}\overline{OB}{OPENAGHMATHJAX}, oraz łuk krzywej \(\Gamma\) wyznaczają obszar zilustowany na poniższym rysunku.
+
+{img fileId="1323" thumb="y" rel="box[g]"}
+
+Taki obszar nazywamy trapezem krzywoliniowym w sensie biegunowego układu współrzędnych. Jego pole możemy obliczyć korzystając z następującego twierdzenia.
+
+{openaghtheorem name="o polu obszaru ograniczonego łukiem krzywej zadanej biegunowo oraz dwoma promieniami wodzącymi" assumptions="" thesis="
+Niech \(\Gamma\) będzie krzywą zadaną biegunowo. Pole \(P\) obszaru ograniczonego łukiem krzywej \(\Gamma\) oraz promieniami wodzącymi 
+o amplitudach  \( \alpha \) i \( \beta \) wyraża się wzorem
+{OPENAGHMATHJAX(type="block" isNumeration="no")} P=\frac{1}{2} \int\limits_{\alpha}^{\beta} r^2(\phi) d \phi. {OPENAGHMATHJAX}
+" anchor="tw_2_pfp"}
+
+__DOWÓD__ 
+Dla każdego {OPENAGHMATHJAX(type="inline")}n \in \mathbb{N}{OPENAGHMATHJAX} podzielmy przedział {OPENAGHMATHJAX()} [\alpha, \beta] {OPENAGHMATHJAX} na \(n\) podprzedziałów {OPENAGHMATHJAX()}[\phi_{k-1}, \phi_{k}] {OPENAGHMATHJAX} {OPENAGHMATHJAX()}( k=1,\ldots,n ){OPENAGHMATHJAX} tak dobierając punkty{OPENAGHMATHJAX()} \phi_k, {OPENAGHMATHJAX} aby zachodziła zależność
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\alpha = \phi_0 \lt \phi_1 \lt \phi_2 \lt \ldots \lt \phi_n = \beta.{OPENAGHMATHJAX}
+W ten sposób otrzymujemy \(n\) trójkątów krzywoliniowych zawartych między łukiem krzywej \(\Gamma\) oraz promieniami wodzącymi 
+o amplitudach {OPENAGHMATHJAX()} \phi_{k-1} {OPENAGHMATHJAX} i {OPENAGHMATHJAX()} \phi_{k}.{OPENAGHMATHJAX} Oznaczmy przez {OPENAGHMATHJAX()} \Delta \phi_k {OPENAGHMATHJAX} długość odcinka {OPENAGHMATHJAX()} [\phi_{k-1}, \phi_{k}], {OPENAGHMATHJAX} tzn.
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \Delta \phi_k = \phi_k - \phi_{k-1}, {OPENAGHMATHJAX}
+gdzie {OPENAGHMATHJAX()} k \in \{1,\ldots,n\}.{OPENAGHMATHJAX} Niech \( \delta_n \) będzie największą ze średnic wszystkich przedziałów {OPENAGHMATHJAX()} [\phi_{k-1}, \phi_{k}],{OPENAGHMATHJAX} czyli
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\delta_n = \max \{\Delta \phi_k : k = 1,\ldots,n\}.{OPENAGHMATHJAX}
+
+Następnie dla każdego {OPENAGHMATHJAX()} k \in \{1,\ldots,n\} {OPENAGHMATHJAX} wybierzmy kąt pośredni {OPENAGHMATHJAX()}\xi_k \in [\phi_{k-1}, \phi_{k}]. {OPENAGHMATHJAX} Przy małych wartościach \( \Delta \phi_k\) pole \(k\)-tego trójkąta jest w przybliżeniu równe polu \( P_k\) wycinka kołowego o promieniu {OPENAGHMATHJAX()} r(\xi_k) {OPENAGHMATHJAX} i kącie środkowym {OPENAGHMATHJAX()} \Delta \phi_k,{OPENAGHMATHJAX} wyrażającego się wzorem
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P_k = \frac{1}{2} r^2(\xi_k)\Delta \phi_k,{OPENAGHMATHJAX}
+gdzie \( \Delta \phi_k\) jest miarą łukową tego kąta środkowego. Oznaczmy przez \(P_n\) sumę pól wszystkich tych wycinków. Wówczas
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P_n = \sum\limits_{k=1}^n P_k = \sum\limits_{k=1}^n \frac{1}{2}  r^2(\xi_k)\Delta \phi_k.{OPENAGHMATHJAX}
+Przechodząc do granicy (jak w konstrukcji całki oznaczonej Riemanna), otrzymujemy
+{OPENAGHMATHJAX(type="block" isNumeration="no")}P = \lim\limits_{n \to \infty}P_n = \lim\limits_{n \to \infty} \sum\limits_{k=1}^n \frac{1}{2}  r^2(\xi_k)\Delta \phi_k = \frac{1}{2} \int\limits_{\alpha}^{\beta} r^2(\phi) d \phi.{OPENAGHMATHJAX}
+__CND.__ 
+
+Zastosujmy powyższy wzór do obliczenia pola figury ograniczonej przez krzywą zadaną biegunowo.
+
+{OPENAGHEXAMPLE()} 
+Wyznaczmy pole figury ograniczonej przez __kardioidę__, czyli krzywą zdefiniowaną biegunowo za pomocą przepisu
+{OPENAGHMATHJAX(type="block" isNumeration="no")}r=a(1+\cos \phi),\quad \text{ gdzie } \quad \phi \in [-\pi, \pi],{OPENAGHMATHJAX}
+przy czym \(a\) jest ustaloną liczbą dodatnią. Aby narysować tę krzywą, skorzystajmy ze znajomości wykresu funkcji cosinus. Otóż, gdy wartości kąta \(\phi\) rosną od \(0\) do {OPENAGHMATHJAX()}\frac{\pi}{2}{OPENAGHMATHJAX}, to wartości cosinusa maleją od \(0\) do \(-1\), a więc promień \(r\) maleje od \( a(1+\cos 0)=2a \) do {OPENAGHMATHJAX()}a(1+\cos \frac{\pi}{2})=a{OPENAGHMATHJAX}. Z kolei, gdy \(\phi\) rośnie od {OPENAGHMATHJAX()}\frac{\pi}{2}{OPENAGHMATHJAX} do \(\pi\), to wartości funkcji cosinus maleją od \(1\) do \(-1\), a więc promień \(r\) maleje od \(a\) do \( a(1+\cos \pi)=0 \). Ponadto promień \(r\) rośnie od \(0\) do \(2a\) dla kąta \(\phi\) zmieniającego się od \(-\pi\) do \(0\). Ponieważ wykres funkcji cosinus jest symetryczny względem osi \(OY\), to kardioida jest symetryczna względem osi \(OX\).
+
+{img fileId="1325" thumb="y" rel="box[g]"}
+
+Korzystając z twierdzenia ((Automatycznie|#tw_2_pfp)) i symetrii rozpatrywanego obszaru względem osi \(OX\), otrzymujemy
+{OPENAGHMATHJAX(type="block" isNumeration="no")} \begin{aligned} P&=2 \cdot\frac{1}{2} \int\limits_{\alpha}^{\beta} r^2(\phi) d \phi=  \int\limits_0^{\pi} a^2(1+\cos \phi)^2 d \phi=a^2 \int\limits_0^{\pi} (1+2\cos \phi+\cos^2 \phi) d\phi \\ &=a^2\Big[ \phi \Big|_0^{\pi} +2 \sin \phi \Big|_0^{\pi} + \int\limits_0^{\pi} \frac{1}{2}\big(1 + \cos 2\phi \big) d \phi \, \Big]=a^2\Big[\, \pi + \frac{1}{2} \phi \Big|_0^{\pi} +\frac{1}{2}\cdot \frac{\sin 2\phi}{2}\Big|_0^{\pi}\Big]\\	 &=2a^2\left[\pi+\frac{\pi}{2}\right]=3\pi a^2. \end{aligned} {OPENAGHMATHJAX}
+{OPENAGHEXAMPLE}
+

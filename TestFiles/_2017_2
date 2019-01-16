@@ -1,0 +1,13 @@
+Przypomnijmy sobie równanie ruchu falowego (zob. moduł ((Prędkość fal i równanie falowe|#r13.15))) dla struny
+
+{OPENAGHMATHJAX(type="block" anchor="r27.5")}\begin{equation}{\frac{\partial^{{2}}y}{\partial x^{{2}}}=\frac{1}{v^{{2}}}\frac{\partial^{{2}}y}{\partial t^2 }}\end{equation}{OPENAGHMATHJAX}
+
+Równanie to opisuje falę poprzeczną rozchodzącą się w kierunku {OPENAGHMATHJAX()}x{OPENAGHMATHJAX} (cząstki ośrodka wychylały się w kierunku {OPENAGHMATHJAX()}y{OPENAGHMATHJAX}). Równanie falowe w tej postaci, stosuje się do wszystkich rodzajów rozchodzących się fal, np.: fal dźwiękowych i fal elektromagnetycznych. Możemy więc przez analogię napisać (pomijając wyprowadzenie) równanie falowe dla fali elektromagnetycznej (rozchodzącej się w kierunku osi {OPENAGHMATHJAX()}x{OPENAGHMATHJAX})
+
+{OPENAGHMATHJAX(type="block" anchor="r27.6")}\begin{equation}{\frac{\partial^{{2}}B_{{z}}}{\partial x^{{2}}}=\frac{1}{c^{{2}}}\frac{\partial^{{2}}B_{{z}}}{\partial t^{{2}}}}\end{equation}{OPENAGHMATHJAX}
+
+Oczywiście pole elektryczne {OPENAGHMATHJAX()}\bf E{OPENAGHMATHJAX} spełnia takie samo równanie
+
+{OPENAGHMATHJAX(type="block" anchor="r27.7")}\begin{equation}{\frac{\partial ^{{2}}E_{{y}}}{\partial x^{{2}}}=\frac{1}{c^{{2}}}\frac{\partial^{{2}}E_{{y}}}{\partial t^{{2}}}}\end{equation}{OPENAGHMATHJAX}
+
+Pola {OPENAGHMATHJAX()}\bf E{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}\bf B{OPENAGHMATHJAX} są do siebie prostopadłe.

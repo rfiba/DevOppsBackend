@@ -1,0 +1,31 @@
+W module tym przedstawimy wektorową metodę składania drgań, wspomnianą w module ((Składanie drgań harmonicznych)).
+
+Drgania harmoniczne, jak i harmoniczne zaburzenie falowe, mogą być przedstawione graficznie jako obracający się wektor, którego długość reprezentuje amplitudę drgań. Taki wektor nazywamy strzałką fazową (wskazem).
+
+Oscylacja (zaburzenie falowe) {OPENAGHMATHJAX()}{x_{{1}}=A_{{1}}\cos{\omega t}}{OPENAGHMATHJAX} w chwili {OPENAGHMATHJAX()}t{OPENAGHMATHJAX} przedstawiona jest przez rzut tej "strzałki" (amplitudy) na oś poziomą (odpowiada to pomnożeniu {OPENAGHMATHJAX()}A_{1}{OPENAGHMATHJAX} przez {OPENAGHMATHJAX()}\cos\omega t {OPENAGHMATHJAX}).
+
+Druga oscylacja (zaburzenie falowe) {OPENAGHMATHJAX()}x_{{2}}=A_{{2}} \cos({\omega t}+\varphi _{{0}}) {OPENAGHMATHJAX}, o amplitudzie {OPENAGHMATHJAX()}A_{2}{OPENAGHMATHJAX}, różni się od drgań {OPENAGHMATHJAX()}x_{1}{OPENAGHMATHJAX} o fazę {OPENAGHMATHJAX()}\varphi_{0}{OPENAGHMATHJAX}. Znajdujemy je podobnie jako rzut „strzałki” na oś poziomą. Teraz wystarczy dodać graficznie (wektorowo) {OPENAGHMATHJAX()}x_{1}{OPENAGHMATHJAX}i{OPENAGHMATHJAX()} x_{2} {OPENAGHMATHJAX} żeby otrzymać wypadkowe drgania tak jak to pokazano na ((Automatycznie|#skladanie_dr_met_wekt_rys1)).
+
+{img type="fileId" fileId="191" anchor="skladanie_dr_met_wekt_rys1" imalign="center"}
+
+{OPENAGHMATHJAX( type="block")}\begin{equation}{x=x_{{1}}+x_{{2}}=A\cos({\omega t}+\varphi )}\end{equation}{OPENAGHMATHJAX}
+
+Widać to jeszcze lepiej, gdy narysuje się wektory dla fazy {OPENAGHMATHJAX()}\omega t = 0{OPENAGHMATHJAX} (lub wielokrotności {OPENAGHMATHJAX()}2\pi {OPENAGHMATHJAX}), i gdy umieści się początek jednej strzałki na końcu poprzedniej zachowując różnicę faz (((Automatycznie|#skladanie_dr_met_wekt_rys2))).
+
+{img type="fileId" fileId="192" anchor="skladanie_dr_met_wekt_rys2" imalign="center"}
+
+Sytuacja odpowiada fazie {OPENAGHMATHJAX()}\omega t = 0{OPENAGHMATHJAX}.
+
+Na podstawie tego rysunku możemy (korzystając z twierdzenia cosinusów) wyznaczyć amplitudę {OPENAGHMATHJAX()}A{OPENAGHMATHJAX} drgań wypadkowych
+
+{OPENAGHMATHJAX( type="block")}\begin{equation}{A=\sqrt{A_{{1}}^{{2}}+A_{{2}}^{{2}}+2A_{{1}}A_{{2}}\cos({180}{}^{\circ}-\varphi_{{0}})}}\end{equation}{OPENAGHMATHJAX}
+
+lub
+
+{OPENAGHMATHJAX( type="block")}\begin{equation}{A=\sqrt{A_{{1}}^{{2}}+A_{{2}}^{{2}}+2A_{{1}}A_{{2}}\cos\varphi_{{0}}}}\end{equation}{OPENAGHMATHJAX}
+
+oraz ich przesunięcie fazowe
+
+{OPENAGHMATHJAX( type="block")}\begin{equation}{{tg}\varphi =\frac{A_{{2}}\sin\varphi_{{0}}}{A_{{1}}+A_{{2}}\cos\varphi _{{0}}}}\end{equation}.{OPENAGHMATHJAX}
+
+Widzimy, że amplituda wypadkowa osiąga maksimum dla równoległych wektorów składowych, co odpowiada zgodnym fazom (różnica faz {OPENAGHMATHJAX()}\varphi_{0} = 0{OPENAGHMATHJAX}), natomiast minimum dla wektorów składowych antyrównoległych (różnica faz {OPENAGHMATHJAX()}\varphi_{0} = \pi {OPENAGHMATHJAX}).

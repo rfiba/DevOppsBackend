@@ -1,0 +1,54 @@
+
+__Funkcje elementarne__
+{OPENAGHDEFINITION( name="(podstawowe funkcje elementarne)")}
+__Podstawowymi funkcjami elementarnymi__ nazywamy następujące funkcje: funkcję identycznościową, {OPENAGHMATHJAX()}y=x{OPENAGHMATHJAX}, funkcje stałą {OPENAGHMATHJAX()}y=const{OPENAGHMATHJAX}, funkcję wykładniczą {OPENAGHMATHJAX()}y=e^x{OPENAGHMATHJAX},  funkcję trygonometryczną {OPENAGHMATHJAX()}y=sin x{OPENAGHMATHJAX}.{OPENAGHDEFINITION}
+{OPENAGHDEFINITION( name="(funkcji elementarnych)")}
+__Funkcjami elementarnymi__ nazywamy wszystkie funkcje, które można otrzymać z podstawowych funkcji elementarnych za pomocą skończonej liczby działań arytmetycznych oraz operacji składania i odwracania funkcji.{OPENAGHDEFINITION}
+{OPENAGHEXAMPLE( name="")}
+Pokażemy, że funkcja {OPENAGHMATHJAX()}F(x)=\cos x+\lo_5(2x^2+1){OPENAGHMATHJAX} jest funkcją elementarną.
+__Rozwiązanie__
+Z funkcji {OPENAGHMATHJAX()}f_1(x)={\pi\over 2}-x{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}f_2(x)=\sin x{OPENAGHMATHJAX}, poprzez złożenie, otrzymamy funkcję {OPENAGHMATHJAX()}g(x)=\cos x{OPENAGHMATHJAX}. Faktycznie, {OPENAGHMATHJAX()}(f_2\circ f_1)(x)=f_2({\pi\over 2}-x)=\sin({\pi\over 2}-x)=\cos x{OPENAGHMATHJAX}.
+Odwracając funkcję wykładniczą {OPENAGHMATHJAX()}f_3(x)=e^x{OPENAGHMATHJAX} otrzymujemy funkcję logarytmiczną {OPENAGHMATHJAX()}f_4(x)=\ln x{OPENAGHMATHJAX}.
+Z funkcji logarytmicznej {OPENAGHMATHJAX()}f_4(x)=\ln x{OPENAGHMATHJAX} oraz funkcji stałej {OPENAGHMATHJAX()}f_5(x)=\ln 5{OPENAGHMATHJAX}, poprzez dzielenie otrzymujemy funkcję logarytmiczną o podstawie {OPENAGHMATHJAX()}5{OPENAGHMATHJAX} {OPENAGHMATHJAX()}h(x)=\log_5x{OPENAGHMATHJAX}, gdyż {OPENAGHMATHJAX()}{{f_4(x)}\over{f_5(x)}}={{\ln x}\over {\ln 5}}=\log_5x{OPENAGHMATHJAX}.
+Z identyczności {OPENAGHMATHJAX()}f_6(x)=x{OPENAGHMATHJAX} i funkcji stałych {OPENAGHMATHJAX()}f_7(x)=2{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}f_8(x)=1{OPENAGHMATHJAX} otrzymujemy funkcję kwadratową {OPENAGHMATHJAX()}l(x){OPENAGHMATHJAX}, {OPENAGHMATHJAX()}f_7(x)\cdot[f_6(x)]^2+f_8(x)=2x^2+1=l(x){OPENAGHMATHJAX}.
+
+Funkcję {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} można więc przedstawić następująco {OPENAGHMATHJAX()}f=g+h\circ l{OPENAGHMATHJAX} czyli {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest funkcją elementarną.{OPENAGHEXAMPLE}
+{OPENAGHEXAMPLE( name="(wielomianu)")}
+Wielomianem stopnia {OPENAGHMATHJAX()}n{OPENAGHMATHJAX} nazywamy funkcje {OPENAGHMATHJAX()}W:\mathbb R\to\mathbb R{OPENAGHMATHJAX} określoną wzorem __{OPENAGHMATHJAX()}W(x)=a_nx^n+a_{n-1}x^{n-1}+\ldots+a_1x+a_0{OPENAGHMATHJAX}__ gdzie {OPENAGHMATHJAX()}n{OPENAGHMATHJAX} jest liczbą naturalną lub zerem, zaś współczynniki {OPENAGHMATHJAX()}a_i{OPENAGHMATHJAX} dla {OPENAGHMATHJAX()}i=0,1,\ldots,n{OPENAGHMATHJAX} są stałymi, przy czym {OPENAGHMATHJAX()}a_n\neq 0{OPENAGHMATHJAX}.
+Przyjmujemy, że funkcja tożsamościowo równa zeru {OPENAGHMATHJAX()}W(x)=0{OPENAGHMATHJAX} jest wielomianem stopnia {OPENAGHMATHJAX()}-\infty{OPENAGHMATHJAX}.{OPENAGHEXAMPLE}
+{OPENAGHANNOTATION( name="")}
+Każdy wielomian możemy otrzymać za pomocą działań arytmetycznych funkcji stałych i identyczności{OPENAGHANNOTATION}
+{OPENAGHDEFINITION( name="(funkcja wymierna)")}
+Funkcją wymierną nazywamy funkcję, którą można zapisać za pomocą ilorazu dwóch wielomianów.{OPENAGHDEFINITION}
+{OPENAGHANNOTATION( name="")}
+Dziedziną naturalną funkcji wymiernej jest zbiór liczb rzeczywistych z wykluczeniem miejsc zerowych mianownika.{OPENAGHANNOTATION}
+{OPENAGHDEFINITION( name="(funkcja wykładnicza)")}
+Niech {OPENAGHMATHJAX()}a>0{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}a\neq 1{OPENAGHMATHJAX}. __Funkcją wykładniczą o podstawie {OPENAGHMATHJAX()}a{OPENAGHMATHJAX}__ nazywamy funkcję {OPENAGHMATHJAX()}f:\mathbb R\to\mathbb R{OPENAGHMATHJAX} określoną wzorem __{OPENAGHMATHJAX()}f(x)=a^x{OPENAGHMATHJAX}__. Dziedziną funkcji wykładniczej jest {OPENAGHMATHJAX()}\mathbb R{OPENAGHMATHJAX}, zbiorem wartości {OPENAGHMATHJAX()}\mathbb R^+{OPENAGHMATHJAX}.
+Funkcja wykładnicza o podstawie {OPENAGHMATHJAX()}a>1{OPENAGHMATHJAX} jest rosnąca, natomiast o podstawie {OPENAGHMATHJAX()}0<a<1{OPENAGHMATHJAX} jest malejąca.{OPENAGHDEFINITION}
+
+Rys. F47. Wykresy funkcji wykładniczej.
+
+{OPENAGHANNOTATION( name="(o funkcjach wykładniczych)")}
+Ponieważ {OPENAGHMATHJAX()}a^0=1{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}a^1=a{OPENAGHMATHJAX}, więc wykres każdej funkcji wykładniczej postaci {OPENAGHMATHJAX()}y=a^x{OPENAGHMATHJAX} przechodzi przez dwa punkty charakterystyczne {OPENAGHMATHJAX()}(0, 1){OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}(1, a){OPENAGHMATHJAX}. 
+Z faktu, że dla każdych dwóch liczb rzeczywistych {OPENAGHMATHJAX()}x_1,x_2\in\mathbb R{OPENAGHMATHJAX} zachodzi {OPENAGHMATHJAX()}a^{x_1+x_2}=a^{x_1}a^{a_2}{OPENAGHMATHJAX} wynika ważna własność funkcji wykładniczej: {OPENAGHMATHJAX()}f(x_1+x_2)=f(x_1)\cdot f(x_2){OPENAGHMATHJAX}. Szczególną rolę w zastosowaniach odgrywa funkcja wykładnicza o podstawie __{OPENAGHMATHJAX()}e{OPENAGHMATHJAX}__, gdzie {OPENAGHMATHJAX()}e{OPENAGHMATHJAX} jest liczbą niewymierną w przybliżeniu równą {OPENAGHMATHJAX()}2.7{OPENAGHMATHJAX}, definiowaną poprzez granicę __{OPENAGHMATHJAX()}e=\lim\limits_{n\to\infty}(1+{1\over n})^n{OPENAGHMATHJAX}__. Funkcja {OPENAGHMATHJAX()}f(x)=e^x{OPENAGHMATHJAX} nazywa się __funkcją ekspotencjalną__ i jest  oznaczaną przez {OPENAGHMATHJAX()}exp{OPENAGHMATHJAX}, gdzie {OPENAGHMATHJAX()}\exp x=e^x{OPENAGHMATHJAX}.{OPENAGHANNOTATION}
+
+Rys. F48. Wykres funkcji {OPENAGHMATHJAX()}\exp x{OPENAGHMATHJAX}
+{OPENAGHDEFINITION( name="(funkcja logarytmiczna)")}
+Niech {OPENAGHMATHJAX()}a>0{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}a\neq 1{OPENAGHMATHJAX}. __Funkcją logarytmiczną o podstawie {OPENAGHMATHJAX()}a{OPENAGHMATHJAX}__ nazywamy funkcję {OPENAGHMATHJAX()}f:\mathbb R\to\mathbb R{OPENAGHMATHJAX} określoną wzorem __{OPENAGHMATHJAX()}f(x)=\log_ax{OPENAGHMATHJAX}__. Dziedziną funkcji logarytmicznej jest {OPENAGHMATHJAX()}\mathbb R^+{OPENAGHMATHJAX}, zbiorem wartości {OPENAGHMATHJAX()}\mathbb R{OPENAGHMATHJAX}
+Funkcja logarytmiczna o podstawie {OPENAGHMATHJAX()}a>1{OPENAGHMATHJAX} jest rosnąca, natomiast o podstawie {OPENAGHMATHJAX()}0<a<1{OPENAGHMATHJAX} jest malejąca.{OPENAGHDEFINITION}
+
+
+Rys. F49. Wykresy funkcji logarytmicznej.
+{OPENAGHANNOTATION( name="(o funkcjach logarytmicznych)")}
+Ponieważ {OPENAGHMATHJAX()}\log_a1=0{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}\log_aa=1{OPENAGHMATHJAX}, więc wykres funkcji logarytmicznej {OPENAGHMATHJAX()}y=\log_ax{OPENAGHMATHJAX} przechodzi przez dwa punkty charakterystyczne {OPENAGHMATHJAX()}(1, 0){OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}(a, 1){OPENAGHMATHJAX}. 
+Z faktu, że dla każdych dwóch liczb rzeczywistych {OPENAGHMATHJAX()}x_1,x_2\in\mathbb R{OPENAGHMATHJAX} zachodzi {OPENAGHMATHJAX()}\log_a(x_1\cdot x_2)=\log_ax_1+\log_ax_2{OPENAGHMATHJAX} wynika ważna własność funkcji logarytmicznej: {OPENAGHMATHJAX()}f(x_1\cdot x_2)=f(x_1)+f(x_2){OPENAGHMATHJAX}. Szczególną rolę w zastosowaniach odgrywa funkcja logarytmiczna o podstawie {OPENAGHMATHJAX()}e{OPENAGHMATHJAX}, gdzie {OPENAGHMATHJAX()}e{OPENAGHMATHJAX} jest stałą Eulera opisaną przy definicji funkcji wykładniczej. Funkcja {OPENAGHMATHJAX()}f(x)=\log_ex{OPENAGHMATHJAX} nazywa się logarytmem naturalnym i jest oznaczana przez {OPENAGHMATHJAX()}\ln{OPENAGHMATHJAX}, czyli {OPENAGHMATHJAX()}\ln x=\log_ex{OPENAGHMATHJAX}.
+
+
+
+Rys. F50. Wykres funkcji {OPENAGHMATHJAX()}\ln x{OPENAGHMATHJAX}
+
+Funkcję logarytmiczną o podstawie {OPENAGHMATHJAX()}10{OPENAGHMATHJAX} nazywamy logarytmem dziesiętnym i oznaczamy przez {OPENAGHMATHJAX()}log{OPENAGHMATHJAX}, czyli {OPENAGHMATHJAX()}\log x=\log_{10}x{OPENAGHMATHJAX}.
+Funkcję logarytmiczna o dowolnej podstawie można zawsze przedstawić jako iloraz funkcji logarytmicznej o podstawie {OPENAGHMATHJAX()}e{OPENAGHMATHJAX} przez stałą {OPENAGHMATHJAX()}\ln a{OPENAGHMATHJAX}, bo {OPENAGHMATHJAX()}\log_ax={{\ln x}\over \ln a}{OPENAGHMATHJAX}.
+Funkcja logarytmiczna o podstawie {OPENAGHMATHJAX()}a{OPENAGHMATHJAX} jest odwrotna do funkcji wykładniczej o tej samej podstawie, skąd można wyprowadzić wiele własności i związków pomiędzy tymi funkcjami – np. fakt, że wykres funkcji logarytmicznej o podstawie {OPENAGHMATHJAX()}a{OPENAGHMATHJAX} jest symetryczny względem diagonali do wykresu funkcji wykładniczej o tej samej podstawie.{OPENAGHANNOTATION}
+
+

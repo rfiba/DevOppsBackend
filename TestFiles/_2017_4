@@ -1,0 +1,106 @@
+{OPENAGHDEFINITION(name="Funkcja wypukła")}
+Funkcję nazywamy __wypukłą (wypukłą ku dołowi)__  w przedziale {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}, gdy odcinek łączący dowolne dwa punkty wykresu funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} zawężonej do przedziału {OPENAGHMATHJAX()}I{OPENAGHMATHJAX} leży powyżej lub na wykresie tej funkcji.
+{OPENAGHDEFINITION}
+
+{OPENAGHDEFINITION(name="Funkcja ściśle wypukła")}
+Funkcję nazywamy __ściśle wypukłą (ściśle wypukłą ku dołowi)__  w przedziale {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}, gdy odcinek łączący dowolne dwa punkty wykresu funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} zawężonej do przedziału {OPENAGHMATHJAX()}I{OPENAGHMATHJAX} leży powyżej wykresu tej funkcji.
+{OPENAGHDEFINITION}
+
+{OPENAGHANNOTATION()}
+Jeżeli funkcja jest ściśle wypukła, to jest też wypukła. Implikacja odwrotna nie jest prawdziwa.
+{OPENAGHANNOTATION}
+((Automatycznie|#fsw_rys)) ilustruje definicję funkcji ściśle wypukłej (czyli również wypukłej) dla {OPENAGHMATHJAX()}I=(a,b){OPENAGHMATHJAX}:
+{img fileId="913" thumb="y" rel="box[g]" anchor="fsw_rys"}
+Na ((Automatycznie|#fwyp_rys)) przedstawiona została funkcja wypukła, która nie jest ściśle wypukła:
+
+{img fileId="914" anchor="fwyp_rys"}
+
+{OPENAGHDEFINITION(name="Funkcja wklęsła")}
+Funkcję nazywamy __wklęsłą (wypukłą ku górze)__  w przedziale {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}, gdy odcinek łączący dowolne dwa punkty wykresu funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} zawężonej do przedziału {OPENAGHMATHJAX()}I{OPENAGHMATHJAX} leży poniżej lub na wykresie tej funkcji.
+{OPENAGHDEFINITION}
+{OPENAGHDEFINITION(name="Funkcja ściśle wklęsła")}
+Funkcję nazywamy __ściśle wklęsłą (ściśle wypukłą ku górze)__  w przedziale {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}, gdy odcinek łączący dowolne dwa punkty wykresu funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} zawężonej do przedziału {OPENAGHMATHJAX()}I{OPENAGHMATHJAX} leży poniżej wykresu tej funkcji.
+{OPENAGHDEFINITION}
+{OPENAGHANNOTATION()}
+Jeżeli funkcja jest ściśle wklęsła, to jest też wklęsła. Implikacja odwrotna nie jest prawdziwa.
+{OPENAGHANNOTATION}
+Definicję funkcji ściśle wklęsłej dla {OPENAGHMATHJAX()}I=(a,b){OPENAGHMATHJAX} ilustruje ((Automatycznie|#dfsw_rys)):
+{img fileId="915" thumb="y" rel="box[g]" anchor="dfsw_rys"}
+Na ((Automatycznie|#fsw_rys2)) przedstawiona została funkcja wklęsła, która nie jest ściśle wklęsła:
+{img fileId="916" thumb="y" rel="box[g]" anchor="fsw_rys2"}
+{openaghtheorem name="o wypukłości i wklęsłości funkcji w przedziale" assumptions="" thesis="
+Niech {OPENAGHMATHJAX()}I{OPENAGHMATHJAX} będzie dowolnym przedziałem.
+#Jeżeli dla każdego {OPENAGHMATHJAX()}x\in I{OPENAGHMATHJAX}: {OPENAGHMATHJAX()}f^{\prime\prime}(x)>0{OPENAGHMATHJAX}, to funkcja jest ściśle wypukła w {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}.
+#Jeżeli dla każdego {OPENAGHMATHJAX()}x\in I{OPENAGHMATHJAX}: {OPENAGHMATHJAX()}f^{\prime\prime}(x)\geqslant 0{OPENAGHMATHJAX}, to funkcja jest wypukła w {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}.
+#Jeżeli dla każdego {OPENAGHMATHJAX()}x\in I{OPENAGHMATHJAX}: {OPENAGHMATHJAX()}f^{\prime\prime}(x)<0{OPENAGHMATHJAX}, to funkcja jest ściśle wklęsła w {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}.
+#Jeżeli dla każdego {OPENAGHMATHJAX()}x\in I{OPENAGHMATHJAX}: {OPENAGHMATHJAX()}f^{\prime\prime}(x)\leqslant 0{OPENAGHMATHJAX}, to funkcja jest wklęsła w {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}.
+"}
+{OPENAGHANNOTATION()}
+Jeżeli {OPENAGHMATHJAX()}f^{\prime\prime}(x)\geqslant 0{OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()}x\in I{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}f^{\prime\prime}(x)=0{OPENAGHMATHJAX} tylko dla skończonej ilości punktów {OPENAGHMATHJAX()}x{OPENAGHMATHJAX}, to funkcja jest ściśle wypukła na {OPENAGHMATHJAX()}I{OPENAGHMATHJAX}.
+{OPENAGHANNOTATION}
+{OPENAGHEXAMPLE()}
+Wyznaczmy przedziały wypukłości funkcji {OPENAGHMATHJAX()}f(x)=x^5{OPENAGHMATHJAX}. 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&f^\prime(x)=5x^4,\\&f^{\prime\prime}(x)=20x^3.\end{aligned}{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&f^{\prime\prime}(x)>0\Leftrightarrow 20x^3>0\Leftrightarrow x>0,\\&f^{\prime\prime}(x)<0\Leftrightarrow 20x^3<0\Leftrightarrow x<0.\end{aligned}{OPENAGHMATHJAX} 
+Wnioskujemy stąd, że funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest ściśle wklęsła na przedziale {OPENAGHMATHJAX()}(-\infty,0){OPENAGHMATHJAX}, a ściśle wypukła na przedziale {OPENAGHMATHJAX()}(0,\infty){OPENAGHMATHJAX}.
+::{img type="fileId" fileId="1450"}::
+{OPENAGHEXAMPLE}
+{OPENAGHDEFINITION(name="Punkt przegięcia")}
+Niech {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} będzie funkcją ciągłą w {OPENAGHMATHJAX()}O(x_0){OPENAGHMATHJAX}. Funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma __punkt przegięcia__  w {OPENAGHMATHJAX()}x_0{OPENAGHMATHJAX}, gdy spełniony jest jeden z warunków:
+
+1. funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest ściśle wypukła w {OPENAGHMATHJAX()}S(x_0^-){OPENAGHMATHJAX} i  ściśle wklęsła w {OPENAGHMATHJAX()}S(x_0^+){OPENAGHMATHJAX}
+
+albo
+
+2. funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest ściśle wklęsła w {OPENAGHMATHJAX()}S(x_0^-){OPENAGHMATHJAX} i ściśle wypukła w {OPENAGHMATHJAX()}S(x_0^+){OPENAGHMATHJAX}.
+{OPENAGHDEFINITION}
+{OPENAGHEXAMPLE()}
+Funkcja {OPENAGHMATHJAX()}f(x)=x^3{OPENAGHMATHJAX} jest ściśle wklęsła w przedziale {OPENAGHMATHJAX()}(-\infty,0){OPENAGHMATHJAX} a ściśle wypukła na przedziale {OPENAGHMATHJAX()}(0,+\infty){OPENAGHMATHJAX}, zatem ma punkt przegięcia w {OPENAGHMATHJAX()}x_0=0{OPENAGHMATHJAX}. 
+::{img fileId="918" thumb="y" rel="box[g]"}::
+{OPENAGHEXAMPLE}
+{openaghtheorem name="warunek konieczny istnienia punktu przegięcia" assumptions="" thesis="
+Jeżeli funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma punkt przegięcia w {OPENAGHMATHJAX()}x_0{OPENAGHMATHJAX} oraz istnieje pochodna rzędu drugiego funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} w punkcie {OPENAGHMATHJAX()}x_0{OPENAGHMATHJAX}, to {OPENAGHMATHJAX()}f^{\prime\prime}(x_0)=0{OPENAGHMATHJAX}.
+"}
+Implikacja odwrotna nie jest prawdziwa.
+{OPENAGHANNOTATION()}
+Z warunku koniecznego możemy wywnioskować, że funkcja może mieć punkty przegięcia __tylko__  w punktach zerowania się drugiej pochodnej lub w punktach, w których ta pochodna nie istnieje. 
+{OPENAGHANNOTATION}
+{OPENAGHEXAMPLE()}
+Dla funkcji {OPENAGHMATHJAX()}f(x)=x^4{OPENAGHMATHJAX} mamy: 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&f^\prime(x)=4x^3,\\&f^{\prime\prime}(x)=12x^2,\\&f^{\prime\prime}(x)=0\Leftrightarrow x=0.\end{aligned}{OPENAGHMATHJAX} 
+Zauważmy, że choć w punkcie {OPENAGHMATHJAX()}x=0{OPENAGHMATHJAX} druga pochodna zeruje się, to funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} nie ma punktu przegięcia w {OPENAGHMATHJAX()}x=0{OPENAGHMATHJAX}. 
+::{img type="fileId" fileId="1451"}::
+{OPENAGHEXAMPLE}
+{openaghtheorem name="I warunek wystarczający istnienia punktu przegięcia" assumptions="" thesis="
+Jeżeli funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX}, jest ciągła w punkcie {OPENAGHMATHJAX()}x_0{OPENAGHMATHJAX} oraz istnieje {OPENAGHMATHJAX()}\delta>0{OPENAGHMATHJAX} taka, że zachodzi jeden z warunków:
+
+1. {OPENAGHMATHJAX()}f^{\prime\prime}(x)<0{OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()}x\in S(x_0^-,\delta){OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}f^{\prime\prime}(x)>0{OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()}x\in S(x_0^+,\delta){OPENAGHMATHJAX},
+
+albo
+
+2. {OPENAGHMATHJAX()}f^{\prime\prime}(x)>0{OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()}x\in S(x_0^-,\delta){OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}f^{\prime\prime}(x)<0{OPENAGHMATHJAX} dla każdego {OPENAGHMATHJAX()}x\in S(x_0^+,\delta){OPENAGHMATHJAX},
+
+to funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma w {OPENAGHMATHJAX()}x_0{OPENAGHMATHJAX} punkt przegięcia. 
+"}
+{OPENAGHEXAMPLE()}
+Dla funkcji {OPENAGHMATHJAX()}f(x)=x^3-1{OPENAGHMATHJAX} mamy: 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&f^\prime(x)=3x^2,\\&f^{\prime\prime}(x)=6x,\end{aligned}{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&f^{\prime\prime}(x)=0\Leftrightarrow x=0,\\&f^{\prime\prime}(x)>0\Leftrightarrow x>0,\\&f^{\prime\prime}(x)<0\Leftrightarrow x<0.\end{aligned}{OPENAGHMATHJAX} 
+Zatem funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma punkt przegięcia w {OPENAGHMATHJAX()}x=0{OPENAGHMATHJAX}.
+::{img fileId="920" thumb="y" rel="box[g]"}::
+{OPENAGHEXAMPLE}
+{openaghtheorem name="II warunek wystarczający istnienia punktu przegięcia" assumptions="" thesis="
+Jeżeli funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma pochodną rzędu {OPENAGHMATHJAX()}n{OPENAGHMATHJAX} w punkcie {OPENAGHMATHJAX()}x_0{OPENAGHMATHJAX} i spełnia warunki:
+#{OPENAGHMATHJAX()}f^{\prime\prime}(x_0)=f^{\prime\prime\prime}(x_0)=\dots=f^{(n-1)}(x_0)=0{OPENAGHMATHJAX},
+#{OPENAGHMATHJAX()}f^{(n)}(x_0)\neq 0{OPENAGHMATHJAX},
+#liczba {OPENAGHMATHJAX()}n{OPENAGHMATHJAX} jest nieparzysta i {OPENAGHMATHJAX()}n\geqslant 3{OPENAGHMATHJAX},
+to w {OPENAGHMATHJAX()}x_0{OPENAGHMATHJAX} funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma punkt przegięcia.
+"}
+{OPENAGHEXAMPLE()}
+Zbadajmy punkty przegięcia funkcji {OPENAGHMATHJAX()}f(x)=(1-x)^5{OPENAGHMATHJAX}. 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&f^\prime(x)=-5(1-x)^4,\\&f^{\prime\prime}(x)=20(1-x)^3,\\&f^{\prime\prime}(x)=0\Leftrightarrow x=1,\\&f^{\prime\prime\prime}(x)=-60(1-x)^2, \; f^{\prime\prime\prime}(1)=0,\\&f^{(4)}(x)=120(1-x),\; f^{(4)}(1)=0\\&f^{(5)}(x)=-120,\; f^{(5)}(1)=-120\neq 0.\end{aligned}{OPENAGHMATHJAX}
+i {OPENAGHMATHJAX()}5{OPENAGHMATHJAX} jest liczbą naturalną nieparzystą większą od 3.
+Zatem funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma punkt przegięcia w {OPENAGHMATHJAX()}x=1{OPENAGHMATHJAX}. 
+::{img type="fileId" fileId="1452"}::
+{OPENAGHEXAMPLE}
+

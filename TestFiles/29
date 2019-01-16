@@ -1,0 +1,111 @@
+ 
+
+{OPENAGHDEFINITION( name="(funkcja okresowa)")}
+Funkcję {OPENAGHMATHJAX()}f:X\to\mathbb R{OPENAGHMATHJAX} nazywamy okresową, jeśli istnieje taka liczba {OPENAGHMATHJAX()}w\neq 0{OPENAGHMATHJAX}, że dla każdego {OPENAGHMATHJAX()}x\in X{OPENAGHMATHJAX} zachodzą warunki {OPENAGHMATHJAX()}x\pm w\in X{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}f(x\pm w)=f(x){OPENAGHMATHJAX}.
+Liczbę {OPENAGHMATHJAX()}w{OPENAGHMATHJAX} nazywamy __okresem funkcji__. Jeżeli istnieje najmniejszy __dodatni__ okres, to nazywamy go __okresem podstawowym__.{OPENAGHDEFINITION}
+
+Rys. F22
+
+{OPENAGHEXAMPLE( name="")}
+Okresem funkcji {OPENAGHMATHJAX()}f(x)=\sin x{OPENAGHMATHJAX}  jest na przykład liczba {OPENAGHMATHJAX()}4\pi {OPENAGHMATHJAX}. Jej okresem podstawowym jest liczba {OPENAGHMATHJAX()}w=2\pi{OPENAGHMATHJAX}{OPENAGHEXAMPLE}
+.
+
+ 
+
+{OPENAGHEXAMPLE( name="")}
+Funkcja stała {OPENAGHMATHJAX()}f(x)=c{OPENAGHMATHJAX} jest funkcją okresową, ale nie ma okresu podstawowego, bo każda liczba dodatnia może być jej okresem.{OPENAGHEXAMPLE}
+ 
+
+{OPENAGHANNOTATION( name="")}
+Jeżeli funkcja {OPENAGHMATHJAX()}x\to f(x){OPENAGHMATHJAX} jest funkcja okresową o okresie {OPENAGHMATHJAX()}w{OPENAGHMATHJAX}, zaś {OPENAGHMATHJAX()}a\in\mathbb R\setminus \{0\}{OPENAGHMATHJAX}, to funkcja {OPENAGHMATHJAX()}x\to f(x)+a{OPENAGHMATHJAX} oraz funkcja {OPENAGHMATHJAX()}x\to af(x){OPENAGHMATHJAX} mają ten sam okres, natomiast funkcja {OPENAGHMATHJAX()}x\to f(ax){OPENAGHMATHJAX} ma okres {OPENAGHMATHJAX()}{w\over {\vert a\vert}}{OPENAGHMATHJAX}{OPENAGHANNOTATION}
+.
+
+Aby sporządzić wykres funkcji okresowej, wystarczy narysować go dla argumentów z dowolnego przedziału o długości {OPENAGHMATHJAX()}w{OPENAGHMATHJAX}, a następnie „powielić” na prawo i lewo od tego przedziału. Podobnie, aby podać funkcję okresową wystarczy zadać jej wartości na takim przedziale. Najbardziej znanymi funkcjami okresowymi są funkcje trygonometryczne, przy czym. Wiadomo, że okres podstawowy funkcji sinus i cosinus wynosi {OPENAGHMATHJAX()}2\pi{OPENAGHMATHJAX}, zaś funkcji tangens i cotangens {OPENAGHMATHJAX()}\pi{OPENAGHMATHJAX}.
+
+{OPENAGHANNOTATION( name="")}
+Które z funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}g{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}h{OPENAGHMATHJAX} są okresowe ? Wskaż, o ile istnieją,  ich okresy podstawowe.
+a) {OPENAGHMATHJAX()}f:\mathbb R^-\to\mathbb R\quad x\to\sin x{OPENAGHMATHJAX},
+b) {OPENAGHMATHJAX()}g:\quad x\to \cos 8x{OPENAGHMATHJAX}, 
+c) {OPENAGHMATHJAX()}f:\quad x\to\vert \sin {1\over 2}x\vert {OPENAGHMATHJAX}.{OPENAGHANNOTATION}
+
+__Rozwiązanie__
+Funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} ma z góry zadany zbiór określoności, natomiast funkcje {OPENAGHMATHJAX()}g{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}h{OPENAGHMATHJAX} będziemy rozpatrywać w ich dziedzinach naturalnych.
+
+__ad a.__
+Funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} nie jest funkcja okresową, gdyż nie spełnia pierwszego warunku definicyjnego dotyczącego dziedziny. Jakkolwiek próbowalibyśmy dobrać okres {OPENAGHMATHJAX()}w>0{OPENAGHMATHJAX}, to znajdziemy takie {OPENAGHMATHJAX()}x\in \mathbb R^-{OPENAGHMATHJAX}, że {OPENAGHMATHJAX()}x+w\notin \mathbb R^-{OPENAGHMATHJAX}.
+uwaga: gdyby funkcja ta była podana następująco {OPENAGHMATHJAX()}x\to\sin x{OPENAGHMATHJAX} to rozpatrywalibyśmy ją w jej dziedzinie naturalnej, (tzn. {OPENAGHMATHJAX()}\mathbb R{OPENAGHMATHJAX} i oczywiście stwierdzilibyśmy, że jest to funkcja okresowa o okresie zasadniczym {OPENAGHMATHJAX()}2\pi{OPENAGHMATHJAX}).
+
+__ad b.__
+
+Dziedziną naturalną funkcji {OPENAGHMATHJAX()}g{OPENAGHMATHJAX} jest {OPENAGHMATHJAX()}\mathbb R{OPENAGHMATHJAX}, gdyż wyrażenie {OPENAGHMATHJAX()}\cos 8x{OPENAGHMATHJAX} ma sens dla dowolnej liczby rzeczywistej, więc pierwszy warunek definicyjny jest spełniony dla dowolnego {OPENAGHMATHJAX()}w>0{OPENAGHMATHJAX}. W związku z postacią funkcji {OPENAGHMATHJAX()}g{OPENAGHMATHJAX} (pamiętając, że funkcja {OPENAGHMATHJAX()}x\to\cos x{OPENAGHMATHJAX} jest funkcją okresową o okresie zasadniczym {OPENAGHMATHJAX()}2\pi{OPENAGHMATHJAX}) stwierdzamy, że funkcja {OPENAGHMATHJAX()}g{OPENAGHMATHJAX} też jest okresowa. Jej okres zasadniczy wynosi {OPENAGHMATHJAX()}{{2\pi}\over 8}={\pi\over 4}{OPENAGHMATHJAX}.
+
+__ad c.__
+
+Podobnie jak dla funkcji {OPENAGHMATHJAX()}g{OPENAGHMATHJAX} pierwszy warunek definicyjny jest spełniony. Dalszą część zadania rozwiążemy graficznie, korzystając z uwag dotyczących rysowani a wykresów funkcji. Rysujemy etapami wykresy:{OPENAGHMATHJAX()}x\to\sin x{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}x\to\sin{1\over 2}x{OPENAGHMATHJAX},{OPENAGHMATHJAX()}x\to\vert\sin{1\over 2}x.{OPENAGHMATHJAX}
+
+Rys. F23 Okresem zasadniczym funkcji {OPENAGHMATHJAX()}h{OPENAGHMATHJAX} jest {OPENAGHMATHJAX()}2\pi.{OPENAGHMATHJAX}
+
+{OPENAGHANNOTATION( name="")}Funkcje okresowe znajdują zastosowanie w technice do opisu zjawisk cyklicznych, np. drgań mechanicznych i akustycznych.{OPENAGHANNOTATION}
+
+{OPENAGHDEFINITION( name="(parzystość i nieparzystość funkcji)")}__Funkcję__ {OPENAGHMATHJAX()}f:X\to Y{OPENAGHMATHJAX} nazywamy __parzystą__ wtedy i tylko wtedy, gdy dla każdego {OPENAGHMATHJAX()}x\in X{OPENAGHMATHJAX} liczba {OPENAGHMATHJAX()}(-x)\in X{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}f(-x)=f(x){OPENAGHMATHJAX}.__Funkcję__ {OPENAGHMATHJAX()}f:X\to Y{OPENAGHMATHJAX} nazywamy __nieparzystą__ wtedy i tylko wtedy, gdy dla każdego {OPENAGHMATHJAX()}x\in X{OPENAGHMATHJAX} liczba {OPENAGHMATHJAX()}(-x)\in X{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}f(-x)=-f(x){OPENAGHMATHJAX}.{OPENAGHDEFINITION}
+
+Rys. F24. Funkcja parzysta. Wykres symetryczny względem osi {OPENAGHMATHJAX()}0y.{OPENAGHMATHJAX}
+
+Rys. F25. Funkcja nieparzysta. Wykres symetryczny względem punktu {OPENAGHMATHJAX()}(0, 0){OPENAGHMATHJAX}.
+
+{OPENAGHANNOTATION( name="")}Warunek pierwszy wspólny dla funkcji parzystej i nieparzystej oznacza, że dziedzina każdej z nich powinna być symetryczna względem {OPENAGHMATHJAX()}(0, 0){OPENAGHMATHJAX}. W szczególności gdy {OPENAGHMATHJAX()}X=\mathbb R{OPENAGHMATHJAX}, jest on trywialnie spełniony. Wykres funkcji parzystej jest symetryczny względem osi {OPENAGHMATHJAX()}0y{OPENAGHMATHJAX}, a nieparzystej względem początku układu współrzędnych czyli  punktu {OPENAGHMATHJAX()}(0, 0){OPENAGHMATHJAX}.{OPENAGHANNOTATION}
+
+{OPENAGHANNOTATION( name="")}Spośród czterech podstawowych funkcji trygonometrycznych jedynie funkcja {OPENAGHMATHJAX()}x\to\cos x{OPENAGHMATHJAX} jest parzysta, pozostałe są nieparzyste. Inne przykładowe funkcje parzyste, to {OPENAGHMATHJAX()}x\to x^2{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}x\to\x^4{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}x\to\vert x\vert {OPENAGHMATHJAX}, {OPENAGHMATHJAX()}x\to\sin^2x{OPENAGHMATHJAX}, a nieparzyste {OPENAGHMATHJAX()}f:\quad x\to\log_3 {{5+x}\over {5-x}} {OPENAGHMATHJAX}, {OPENAGHMATHJAX()}x\to x^5{OPENAGHMATHJAX}. Zauważmy, że większość funkcji nie ma ani własności parzystości, ani nieparzystości.{OPENAGHANNOTATION}
+
+{OPENAGHEXAMPLE( name="")}Zbadajmy parzystość i nieparzystość funkcji:a) {OPENAGHMATHJAX()}f: x\to\log_3 {{5+x}\over {5-x}} {OPENAGHMATHJAX}.b) {OPENAGHMATHJAX()}g: x\to\sin(\cos 2x)+\vert\sin x\vert+4{OPENAGHMATHJAX}.{OPENAGHEXAMPLE}
+
+__Rozwiązanie.____Ad a__{OPENAGHMATHJAX()}D_f=\{x:5-x\neq \wedge{{5+x}\over {5-x}}>0\}.{OPENAGHMATHJAX} Rozwiązując nierówność{OPENAGHMATHJAX()}{{5+x}\over {5-x}}>0{OPENAGHMATHJAX}
+
+Rys. F26
+
+mamy {OPENAGHMATHJAX()}x\in (-5,5){OPENAGHMATHJAX}.
+
+Stąd {OPENAGHMATHJAX()}D_f=(-5,5){OPENAGHMATHJAX}. Jest to oczywiście przedział symetryczny względem {OPENAGHMATHJAX()}(0, 0){OPENAGHMATHJAX}, czyli warunek pierwszy jest spełniony. Obliczmy {OPENAGHMATHJAX()}f(-x){OPENAGHMATHJAX}.
+{OPENAGHMATHJAX()}f(-x)=\log_3{{5-x}\over {5+x}}=\log_3\left({{5+x}\over {5-x}}\right)^{-1}=-\log_3{{5+x}\over {5-x}}=-f(x).{OPENAGHMATHJAX}
+
+
+__Odpowiedź__
+Funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest nieparzysta.
+
+__ad b.__
+{OPENAGHMATHJAX()}D_f=\mathbb R{OPENAGHMATHJAX}, więc warunek dotyczący symetrii dziedziny jest spełniony. Obliczając {OPENAGHMATHJAX()}g(-x){OPENAGHMATHJAX} mamy
+{OPENAGHMATHJAX()}g(-x)=\sin (\cos(-2x))+\vert\sin (-x)\vert+4=\sin (\cos 2x)+\vert\sin x\vert +4=g(x).{OPENAGHMATHJAX}
+
+__Odpowiedź__
+Funkcja {OPENAGHMATHJAX()}g{OPENAGHMATHJAX} jest parzysta.
+
+{openaghtheorem name="(o rozkładzie funkcji na parzystą i nieparzystą)" thesis="Wówczas{OPENAGHMATHJAX( type="block")}f_1(x)={{f(x)+f(-x)}\over 2}{OPENAGHMATHJAX},{OPENAGHMATHJAX( type="block")}f_2(x)={{f(x)-f(-x)}\over 2}{OPENAGHMATHJAX}."}
+ 
+
+ 
+
+{OPENAGHEXAMPLE( name="")}Rozłożymy funkcję {OPENAGHMATHJAX()}f_1(x)={{f(x)+f(-x)}\over 2}{OPENAGHMATHJAX} na sumy części parzystej i nieparzystej.__Rozwiązanie__ {OPENAGHMATHJAX()}D_f=\mathbb R{OPENAGHMATHJAX}  jest zbiorem symetrycznym względem {OPENAGHMATHJAX()}(0, 0){OPENAGHMATHJAX}, czyli taki rozkład jest możliwy.{OPENAGHMATHJAX()}f_1(x)={{f(x)+f(-x)}\over 2}={{3x^2+2x+7+(3(-x)^2+2(-x)+7}\over 2}={{6x^2+14}\over 2}=3x^2+7{OPENAGHMATHJAX},{OPENAGHMATHJAX()}f_2(x)={{f(x)-f(-x)}\over 2}={{3x^2+2x+7+(3(-x)^2-2x+7)}\over 2}={{3x^2+2x+7-3x^2+2x-7}\over 2}={4x\over 2}=2x{OPENAGHMATHJAX}.__Odpowiedź__Część parzysta funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} to funkcja kwadratowa {OPENAGHMATHJAX()}f_1(x)=3x^2+7{OPENAGHMATHJAX}Część nieparzysta funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} to funkcja liniowa {OPENAGHMATHJAX()}f_2(x)=2x{OPENAGHMATHJAX}{OPENAGHEXAMPLE}
+ 
+
+ 
+
+{OPENAGHEXAMPLE( name="")}Znajdziemy część parzystą i część nieparzystą funkcji {OPENAGHMATHJAX()}f(x)=2\sin (6x){OPENAGHMATHJAX}.__Rozwiązanie__{OPENAGHMATHJAX()}D_f=\mathbb R{OPENAGHMATHJAX}  jest zbiorem symetrycznym względem {OPENAGHMATHJAX()}(0, 0){OPENAGHMATHJAX}, czyli taki rozkład jest możliwy.{OPENAGHMATHJAX()}f_1(x)={{f(x)+f(-x)}\over 2}={{2\sin 6x+2\sin (-6x)}\over 2}={{2\sin 6x-2\sin 6x}\over 2}={0\over 2}{OPENAGHMATHJAX},{OPENAGHMATHJAX(type="block")}f_2(x)={{f(x)-f(-x)}\over 2}={{2\sin 6x-2\sin (-6x)}\over 2}={{2\sin 6x+2\sin 6x}\over 2}=2\sin 6x{OPENAGHMATHJAX}.Zauważmy, że tu {OPENAGHMATHJAX()}f_1(x)={{f(x)+f(-x)}\over 2}={{2\sin 6x+2\sin (-6x)}\over 2}={{2\sin 6x-2\sin 6x}\over 2}={0\over 2}{OPENAGHMATHJAX}. Wynika to z faktu, że dana funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest funkcją nieparzystą. Wówczas jej częścią parzystą jest funkcja tożsamościowo równa zeru.__Odpowiedź__Część parzysta funkcji f to funkcja {OPENAGHMATHJAX()}f_1(x)=0{OPENAGHMATHJAX}.Część nieparzysta funkcji {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} to funkcja {OPENAGHMATHJAX()}f_2(x)=2\sin 6 x{OPENAGHMATHJAX}.{OPENAGHEXAMPLE}
+ 
+
+ 
+
+{OPENAGHDEFINITION( name="(funkcji ograniczonej z góry)")}Funkcję {OPENAGHMATHJAX()}f:X\to Y{OPENAGHMATHJAX} jest ograniczona z góry, jeżeli jej zbiór wartości jest __ograniczony z góry__, czyli jeśli istnieje taka liczba {OPENAGHMATHJAX()}M{OPENAGHMATHJAX}, że dla każdego {OPENAGHMATHJAX()}x\in D_f{OPENAGHMATHJAX} zachodzi, że {OPENAGHMATHJAX()}f(x)\le M{OPENAGHMATHJAX}{OPENAGHDEFINITION}
+.
+
+
+Rys. F27. Funkcja ograniczona z góry. Wykres leży poniżej prostej {OPENAGHMATHJAX()}y=M{OPENAGHMATHJAX}.
+
+{OPENAGHEXAMPLE( name="")}Funkcja {OPENAGHMATHJAX()}f(x)=3-\vert x\vert{OPENAGHMATHJAX} jest ograniczona z góry. Jako {OPENAGHMATHJAX()}M{OPENAGHMATHJAX} można przyjąć liczbę {OPENAGHMATHJAX()}3{OPENAGHMATHJAX} lub każdą liczbę większą od {OPENAGHMATHJAX()}3{OPENAGHMATHJAX}. Nierówność {OPENAGHMATHJAX()}f(x)\le M{OPENAGHMATHJAX} przyjmuje tu postać {OPENAGHMATHJAX()}3-\vert x\vert\le 3{OPENAGHMATHJAX} równoważną nierówności {OPENAGHMATHJAX()}\vert x\vert\ge 0{OPENAGHMATHJAX}, która jest zawsze spełniona.{OPENAGHEXAMPLE} 
+
+{OPENAGHDEFINITION( name="(funkcji ograniczonej z dołu)")}Funkcja {OPENAGHMATHJAX()}f:X\to Y{OPENAGHMATHJAX} jest ograniczona z dołu, jeżeli jej zbiór wartości jest __ograniczony z dołu__, czyli jeśli istnieje taka liczba __{OPENAGHMATHJAX()}m{OPENAGHMATHJAX}__, że dla każdego {OPENAGHMATHJAX()}x\in D_f{OPENAGHMATHJAX} zachodzi, że {OPENAGHMATHJAX()}f(x)\ge m{OPENAGHMATHJAX}{OPENAGHDEFINITION}
+.
+
+
+Rys. F28. Funkcja ograniczona z dołu. Wykres leży nad prostą {OPENAGHMATHJAX()}y=m{OPENAGHMATHJAX} lub jej dotyka.
+
+{OPENAGHEXAMPLE( name="")}Funkcja {OPENAGHMATHJAX()}f(x)=2^x-1{OPENAGHMATHJAX} jest ograniczona z dołu przez liczbę {OPENAGHMATHJAX()}-1{OPENAGHMATHJAX}. Nierówność {OPENAGHMATHJAX()}f(x)\ge m{OPENAGHMATHJAX} przyjmuje tu postać {OPENAGHMATHJAX()}2^x-1\ge -1{OPENAGHMATHJAX}, czyli {OPENAGHMATHJAX()}2^x\ge 0{OPENAGHMATHJAX}, co jest prawdą dla każdego {OPENAGHMATHJAX()}x\in\mathbb R{OPENAGHMATHJAX}.{OPENAGHEXAMPLE}

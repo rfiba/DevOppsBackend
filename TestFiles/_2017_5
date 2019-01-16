@@ -1,0 +1,103 @@
+{OPENAGHEXAMPLE(name="")}
+Wyznaczyć rozwiązanie problemu początkowego:
+{OPENAGHMATHJAX(type="block" anchor="wzor1liniejedno")}\begin{bmatrix} x^\prime(t)\\y^\prime(t)\\z^\prime(t)\end{bmatrix}=\begin{bmatrix}2&-1&1\\-1&2&-1\\1&1&2\end{bmatrix} \cdot\begin{bmatrix}x(t)\\ y(t)\\z(t)\end{bmatrix}\hskip 0.5pc,\hskip 1.5pc  \begin{bmatrix}x(0)\\y(0)\\z(0)\end{bmatrix}=\begin{bmatrix}1\\-1\\0\end{bmatrix}.{OPENAGHMATHJAX}
+W pierwszej kolejności wyznaczamy wartości własne macierzy {OPENAGHMATHJAX()}\hskip 0.3pc A\hskip 0.3pc{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}A=\begin{bmatrix}2&-1&1\\-1&2&-1\\1&1&2\end{bmatrix},{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&|A-\lambda I|=\begin{vmatrix}2-\lambda &-1&1\\-1&2-\lambda & -1\\1&1&2-\lambda \end{vmatrix}\stackrel{w_2+w_1}{=}\begin{vmatrix} 1-\lambda &1-\lambda & 0\\-1&2-\lambda & -1\\1&1&2-\lambda \end{vmatrix} \stackrel{-k_1+k_2}{=}\\ &\begin{vmatrix}1-\lambda &0&0\\-1&3-\lambda &-1\\1&0&2-\lambda \end{vmatrix}=(1-\lambda )\begin{vmatrix}3-\lambda &-1\\0&2-\lambda\end{vmatrix}=(1-\lambda)(2-\lambda)(3-\lambda )=0\end{aligned}{OPENAGHMATHJAX}
+zatem {OPENAGHMATHJAX()}\hskip 0.3pc \lambda_1=1,\hskip 0.3pc \lambda_2=2,\hskip 0.3pc \lambda_3=3\hskip 0.3pc{OPENAGHMATHJAX} są jednokrotnymi wartościami własnymi macierzy {OPENAGHMATHJAX()}\hskip 0.3pc A {OPENAGHMATHJAX}.
+Wyznaczamy teraz podprzestrzenie własne dla {OPENAGHMATHJAX()}\hskip 0.5pc \lambda_1,\hskip 0.5pc \lambda_2\hskip 0.5pc{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}\hskip 0.3pc \lambda_3{OPENAGHMATHJAX}.
+__Dla {OPENAGHMATHJAX()}\lambda_1=1.{OPENAGHMATHJAX}__
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_1^{(0)}=\{X: \hskip 0.8pc (A-I)\cdot X=0\},{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&(A-I)\cdot X=0\Leftrightarrow \begin{bmatrix}1&-1&1\\-1&1&-1\\1&1&1\end{bmatrix}\cdot \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}0\\0\\0\end{bmatrix} \Leftrightarrow \begin{cases}x_1-x_2+x_3=0&\\	-x_1+x_2-x_3=0&\\	x_1+x_2+x_3=0&\end{cases}\Leftrightarrow\\& \begin{cases}x_1-x_2+x_3=0&\\	x_1+x_2+x_3=0\end{cases}\Leftrightarrow\begin{cases}x_1-x_2+x_3=0&\\	2x_2=0\end{cases}\Leftrightarrow  \begin{cases}x_1=-x_3&\\	x_2=0\end{cases}.\end{aligned}{OPENAGHMATHJAX}
+Zatem podprzestrzeń własna {OPENAGHMATHJAX()}\hskip 0.3pc V_1^{(0)}\hskip 0.3pc {OPENAGHMATHJAX} ma postać
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_1^{(0)}=\left\lbrace \begin{bmatrix} -x_3\\	0\\	x_3\end{bmatrix}=\begin{bmatrix}-1\\0\\	1\end{bmatrix}x_3\hskip 0.4pc,\hskip 1.2pc x_3\in\mathbb{R}\right\rbrace {OPENAGHMATHJAX} i wektorem własnym generującym tę podprzestrzeń jest {OPENAGHMATHJAX()}\hskip 0.3pc v_1^{(0)}=\begin{bmatrix}-1\\0\\1\end{bmatrix}. {OPENAGHMATHJAX}
+__Dla {OPENAGHMATHJAX()}\lambda_2=2.{OPENAGHMATHJAX}__
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_2^{(0)}=\{X: \hskip 0.5pc (A-2I)\cdot X=0\},{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}(A-2I)\cdot X=0\Leftrightarrow \begin{bmatrix}0&-1&1\\-1&0&-1\\1&1&0\end{bmatrix}\cdot \begin{bmatrix} x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}0\\0\\0\end{bmatrix}\Leftrightarrow \begin{cases}-x_2+x_3=0&\\-x_1-x_3=0&\\	x_1+x_2=0&\end{cases}\Leftrightarrow \begin{cases}x_3= x_2&\\x_1=-x_2\end{cases}.{OPENAGHMATHJAX}
+Zatem podprzestrzeń własna {OPENAGHMATHJAX()}\hskip 0.3pc V_2^{(0)}\hskip 0.3pc{OPENAGHMATHJAX} ma postać
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_2^{(0)}=\left\lbrace \begin{bmatrix} -x_2\\	x_2\\x_2\end{bmatrix}=\begin{bmatrix}-1\\1\\1\end{bmatrix}x_2,\hskip 1.2pc x_2\in\mathbb{R}\right\rbrace {OPENAGHMATHJAX} i wektorem własnym generującym tę podprzestrzeń jest {OPENAGHMATHJAX()}\hskip 0.3pc v_2^{(0)}=\begin{bmatrix}-1\\1\\1 \end{bmatrix}.{OPENAGHMATHJAX}
+__Dla {OPENAGHMATHJAX()}\lambda_3=3.{OPENAGHMATHJAX}__
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_3^{(0)}=\{X: \hskip 0.8pc (A-3I)\cdot X=0\},{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&(A-3I)\cdot X=0\Leftrightarrow \begin{bmatrix}-1&-1&1\\-1&-1&-1\\1&1&-1\end{bmatrix}\cdot \begin{bmatrix} x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}0\\0\\0\end{bmatrix}\Leftrightarrow \begin{cases}-x_1-x_2+x_3=0&\\	-x_1-x_2-x_3=0&\\	x_1+x_2-x_3=0&\end{cases}\Leftrightarrow\\& \begin{cases}-x_1-x_2+x_3=0&\\	-x_1-x_2-x_3=0&\end{cases}\Leftrightarrow \begin{cases}x_2=-x_1&\\	x_3=0\end{cases}.\end{aligned}{OPENAGHMATHJAX}
+Zatem podprzestrzeń własna {OPENAGHMATHJAX()}\hskip 0.3pc V_3^{(0)}\hskip 0.3pc{OPENAGHMATHJAX} ma postać
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_3^{(0)}=\left\lbrace \begin{bmatrix}x_1\\-x_1\\	0\end{bmatrix}=\begin{bmatrix}1\\-1\\0\end{bmatrix}x_1,\hskip 1.2pc x_1\in\mathbb{R}\right\rbrace {OPENAGHMATHJAX} i wektorem własnym generującym tą podprzestrzeń jest  {OPENAGHMATHJAX()}\hskip 0.3pc v_3^{(0)}=\begin{bmatrix}1\\-1\\0\end{bmatrix}{OPENAGHMATHJAX}
+Macierze {OPENAGHMATHJAX()}\hskip 0.3pcJ,\hskip 0.3pc P{OPENAGHMATHJAX}  i {OPENAGHMATHJAX()}\hskip 0.3pc P^{-1}\hskip 0.3pc{OPENAGHMATHJAX} mają więc postać:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}J=\begin{bmatrix}1&0&0\\0&2&0\\0&0&3\end{bmatrix},\hskip 0.8pc P=\begin{bmatrix}-1&-1&1\\0&1&-1\\1&1&0\end{bmatrix},\hskip 0.8pc P^{-1}=\begin{bmatrix}-1&-1&0\\	1&1&1\\1&0&1\end{bmatrix}.{OPENAGHMATHJAX}
+Ponieważ {OPENAGHMATHJAX()}\hskip 0.3pc A=P\cdot J\cdot P^{-1},\hskip 0.3pc{OPENAGHMATHJAX} więc 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}e^{tA}=&P\cdot e^{tJ}\cdot P^{-1}=\begin{bmatrix}-1&-1&1\\0&1&-1\\1&1&0\end{bmatrix}\cdot \begin{bmatrix}e^t&0&0\\0& e^{2t}&0\\0&0&e^{3t}\end{bmatrix} \cdot \begin{bmatrix}-1&-1&0\\	1&1&1\\	1&0&1\end{bmatrix}=\\&\begin{bmatrix}e^t-e^{2t}+e^{3t}&e^t-e^{2t}&-e^{2t}+e^{3t}\\	e^{2t}-e^{3t} &e^{2t}&e^{2t}-e^{3t}\\	-e^t+e^{2t}&-e^{-t}+e^{2t}&e^{2t}\end{bmatrix}.\end{aligned}{OPENAGHMATHJAX} Rozwiązanie problemu początkowego ((Automatycznie|#wzor1liniejedno)) jest zatem postaci
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{bmatrix} x(t)\\y(t)\\z(t)\end{bmatrix}=e^{tA}\cdot \begin{bmatrix} x(0)\\y(0)\\z(0)\end{bmatrix}=\begin{bmatrix}e^t-e^{2t}+ e^{3t}&e^t-e^{2t}&-e^{2t}+e^{3t}\\e^{2t}-e^{3t}&e^{2t}&e^{2t}-e^{3t}\\-e^t+e^{2t}&-e^{-t}+e^{2t}&e^{2t}\end{bmatrix}\cdot \begin{bmatrix}1\\-1\\0\end{bmatrix}=\begin{bmatrix}e^{3t}\\-e^{3t}\\0\end{bmatrix}.{OPENAGHMATHJAX}
+{OPENAGHEXAMPLE}
+
+
+
+{OPENAGHANNOTATION(name="")}
+Jeżeli szukamy rozwiązania ogólnego układu równań
+{OPENAGHMATHJAX(type="block" isNumeration="no")}x^\prime(t)=A\cdot x(t){OPENAGHMATHJAX} i wartości własne macierzy {OPENAGHMATHJAX()}\hskip 0.3pc A\hskip 0.3pc {OPENAGHMATHJAX} są rzeczywiste, to rozwiązanie ogólne jest postaci:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}x(t)=e^{tA}\cdot C=P\cdot e^{tJ}\cdot P^{-1}\cdot C=P\cdot e^{tJ}\cdot \tilde{C}\hskip 1pc  {\rm gdzie}\hskip 1pc \tilde{C}= \begin{bmatrix}\tilde{c_1}\\ \vdots \\\tilde{c_n}\end{bmatrix}{OPENAGHMATHJAX}
+{OPENAGHMATHJAX()}\tilde{c_1},\ldots ,\hskip 0.3pc \tilde{c_n}\hskip 0.3pc{OPENAGHMATHJAX} są to dowolne stałe rzeczywiste.
+W takiej sytuacji nie ma potrzeby wyznaczać macierzy odwrotnej: {OPENAGHMATHJAX()}\hskip 0.3pc P^{-1},\hskip 0.3pc{OPENAGHMATHJAX} ponieważ dla dowolnego stałego wektora {OPENAGHMATHJAX()}\hskip 0.3pc C\hskip 0.3pc{OPENAGHMATHJAX} istnieje {OPENAGHMATHJAX()}\hskip 0.3pc \tilde{C}\hskip 0.3pc{OPENAGHMATHJAX} takie, że {OPENAGHMATHJAX()}\hskip 0.3pc\tilde{C}=P^{-1}\cdot C{OPENAGHMATHJAX}.
+{OPENAGHANNOTATION}
+
+
+{OPENAGHEXAMPLE(name="" anchor="przyklad2-liniejedno")}Wyznaczyć rozwiązanie ogólne układu równań:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}x^\prime(t)=A\cdot x(t)\hskip 1.3pc {\rm gdzie}\hskip 1.3pc  A=\begin{bmatrix}2&-1&2\\1&0&2\\-2&1&-1\end{bmatrix} .{OPENAGHMATHJAX} 
+Wyznaczamy wartości własne macierzy {OPENAGHMATHJAX()}\hskip 0.3pcA\hskip 0.3pc{OPENAGHMATHJAX}:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&|A-\lambda I|=\begin{vmatrix}2-\lambda &-1&2\\1&-\lambda & 2\\-2&1&-1-\lambda \end{vmatrix}\stackrel{-w_2+w_1}{=}\begin{vmatrix} 1&-\lambda &\lambda-1& 0\\1&-\lambda & 2\\-2&1&-1-\lambda \end{vmatrix} \stackrel{k_1+k_2}{=}\\ &\begin{vmatrix}1-\lambda &0&0\\1&1-\lambda &2\\-2&-1&-1-\lambda \end{vmatrix}=(1-\lambda )\begin{vmatrix}1-\lambda &2\\-1&-1-\lambda\end{vmatrix}=(1-\lambda)(\lambda^2+1)=0\end{aligned}{OPENAGHMATHJAX}
+zatem {OPENAGHMATHJAX()}\hskip 0.3pc\lambda_1=1,\hskip 0.3pc \lambda_2=i,\hskip 0.3pc \lambda_3=-i\hskip 0.3pc{OPENAGHMATHJAX} są jednokrotnymi wartościami własnymi macierzy {OPENAGHMATHJAX()}\hskip 0.3pc A {OPENAGHMATHJAX}.
+Wyznaczamy teraz podprzestrzenie własne dla {OPENAGHMATHJAX()}\hskip 0.3pc \lambda_1,\hskip 0.3pc \lambda_2\hskip 0.3pc{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}\hskip 0.3pc\lambda_3{OPENAGHMATHJAX}.
+__Dla {OPENAGHMATHJAX()}\lambda_1=1.{OPENAGHMATHJAX}__
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_1^{(0)}=\{X: \hskip 0.8pc (A-I)\cdot X=0\},{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&(A-I)\cdot X=0\Leftrightarrow \begin{bmatrix}1&-1&2\\1&-1&2\\-2&1&-2\end{bmatrix}\cdot \begin{bmatrix}x_1\\x_2\\x_3 \end{bmatrix}=\begin{bmatrix}0\\0\\0\end{bmatrix}\Leftrightarrow \begin{cases}x_1-x_2+2x_3=0&\\x_1-x_2+2x_3=0&\\-2x_1+x_2-2x_3=0&\end{cases}\Leftrightarrow\\& \begin{cases}x_1-x_2+2x_3=0&\\-2x_1+x_2-2x_3=0\end{cases}\stackrel{r_1+r_2}{\Leftrightarrow}\begin{cases}x_1-x_2+2x_3=0&\\-x_1=0\end{cases}\Leftrightarrow  \begin{cases}x_2=2x_3&\\x_1=0\end{cases}.\end{aligned}{OPENAGHMATHJAX}
+Zatem podprzestrzeń własna {OPENAGHMATHJAX()}\hskip 0.3pc V_1^{(0)}\hskip 0.3pc{OPENAGHMATHJAX} ma postać
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_1^{(0)}=\left\lbrace \begin{bmatrix}0\\2x_3\\x_3\end{bmatrix}=\begin{bmatrix} 0\\2\\1\end{bmatrix}x_3,\hskip 1.3pc  x_3\in\mathbb{R}\right\rbrace{OPENAGHMATHJAX} i wektorem własnym generującym tą podprzestrzeń jest {OPENAGHMATHJAX()}\hskip 0.3pc v_1^{(0)}=\begin{bmatrix}0\\2\\1\end{bmatrix}.\hskip 0.3pc {OPENAGHMATHJAX}
+__Dla {OPENAGHMATHJAX()}\lambda_2=i.{OPENAGHMATHJAX}__
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_2^{(0)}=\{X: \hskip 0.5pc (A-iI)\cdot X=0\},{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&(A-iI)\cdot X=0\Leftrightarrow \begin{bmatrix}2-i&-1&2\\1&-i&2\\-2&1&-1-i\end{bmatrix}\cdot \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}0\\0\\0\end{bmatrix}\Leftrightarrow \\	&\begin{cases}(2-i)x_1-x_2+2x_3=0&\\x_1-ix_2+2x_3=0&\\	-2x_1+x_2+(-1-i)x_3=0&\end{cases}\stackrel{-r_2+r_1}{\Leftrightarrow}\begin{cases}(1-i)x_1+(i-1)x_2=0&\\-2x_1+x_2-(1+i)x_3=0&\end{cases}\Leftrightarrow \begin{cases}x_1= x_2&\\	x_3=\frac{i-1}{2}x_2\end{cases}.\end{aligned}{OPENAGHMATHJAX}
+Zatem podprzestrzeń własna {OPENAGHMATHJAX()}\hskip 0.3pc V_2^{(0)}\hskip 0.3pc{OPENAGHMATHJAX} ma postać
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V_2^{(0)}=\left\lbrace \begin{bmatrix}2x_2\\2x_2\\	(i-1)x_2\end{bmatrix}=\begin{bmatrix}2\\2\\	i-1\end{bmatrix}x_2,\hskip 1.3pc  x_2\in\mathbb{R}\right\rbrace {OPENAGHMATHJAX} i wektorem własnym generującym tę podprzestrzeń jest {OPENAGHMATHJAX()}\hskip 0.3pc v_2^{(0)}=\begin{bmatrix}2\\2\\i-1 \end{bmatrix}.{OPENAGHMATHJAX}
+__Dla {OPENAGHMATHJAX()}\lambda_3=-i.{OPENAGHMATHJAX}__
+W tym przypadku {OPENAGHMATHJAX()}\hskip 0.3pc V_3^{(0)}=\overline{V_2^{(0)}}\hskip 0.3pc{OPENAGHMATHJAX} i  {OPENAGHMATHJAX()}\hskip 0.3pc v_3^{(0)}=\overline{v_2^{(0)}}=\begin{bmatrix}2\\2\\-1-i\end{bmatrix}.{OPENAGHMATHJAX} 
+Macierze {OPENAGHMATHJAX()}\hskip 0.3pc J,\hskip 0.3pc P\hskip 0.3pc{OPENAGHMATHJAX}  i {OPENAGHMATHJAX()}\hskip 0.3pc P^{-1}\hskip 0.3pc{OPENAGHMATHJAX} mają więc postać:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}J=\begin{bmatrix}1&0&0\\0&i&0\\0&0&-i\end{bmatrix},\hskip 0.5pc P=\begin{bmatrix}0&2&2\\	2&2&2\\	1&-1+i&-1-i\end{bmatrix},\hskip 0.5pc P^{-1}=\begin{bmatrix}-\frac{1}{2}&\frac{1}{2}&0\\\frac{1}{4}-\frac{1}{2}i&\frac{1}{4}i&-\frac{1}{2}i\\	\frac{1}{4}+\frac{1}{2}i&-\frac{1}{4}i&\frac{1}{2}i\end{bmatrix}.{OPENAGHMATHJAX}
+Wyznaczamy  macierz  {OPENAGHMATHJAX()}\hskip 0.3pc e^{tJ}{OPENAGHMATHJAX} 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}e^{tJ}=\begin{bmatrix}e^t&0&0\\0&e^{it}&0\\0&0&e^{-it}\end{bmatrix}=\begin{bmatrix}e^t&0&0\\0&\cos t+i\sin t &0\\0&0&\cos t-i\sin t\end{bmatrix}.{OPENAGHMATHJAX}
+Zatem
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}&e^{tA}=P\cdot e^{tJ}\cdot P^{-1}=\begin{bmatrix} 0&2&2\\2&2&2\\1&-1+i&-1-i\end{bmatrix}\cdot \begin{bmatrix}e^t&0&0\\	0&\cos t+i\sin t&0\\0&0&\cos t-i\sin t\end{bmatrix} \cdot\\&\begin{bmatrix}-\frac{1}{2}&\frac{1}{2}&0\\\frac{1}{4}-\frac{1}{2}i&\frac{1}{4}i&-\frac{1}{2}i\\\frac{1}{4}+\frac{1}{2}i&-\frac{1}{4}i&\frac{1}{2}i\end{bmatrix} = \begin{bmatrix}2\sin t+\cos t&-\sin t&2\sin t\\	-e^t+2\sin t+\cos t&e^t-\sin t&2\sin t\\\frac{1}{2}(-e^t-3\sin t+\cos t)&\frac{1}{2}(e^t+\sin t-\cos t)&\cos t-\sin t\end{bmatrix}.\end{aligned}{OPENAGHMATHJAX} Zatem rozwiązanie ogólne ma  postać:
+
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}\begin{bmatrix} x_1(t)\\x_2(t)\\x_3(t)\end{bmatrix}=&\begin{bmatrix}2\sin t+\cos t&-\sin t&2\sin t\\-e^t+2\sin t+\cos t&e^t-\sin t&2\sin t\\\frac{1}{2}(-e^t-3\sin t+\cos t)&\frac{1}{2}(e^t+\sin t-\cos t)&\cos t-\sin t\end{bmatrix}\begin{bmatrix} c_1\\c_2\\c_3\end{bmatrix}=\\&\begin{bmatrix}(2\sin t+\cos t)c_1&-\sin tc_2&2\sin t c_3\\(-e^t+2\sin t+\cos t)c_1&(e^t-\sin t)c_2&2\sin t c_3\\ \frac{1}{2}(-e^t-3\sin t+\cos t)c_1&\frac{1}{2}(e^t+\sin t-\cos t)c_2&(\cos t-\sin t)c_3\end{bmatrix}\end{aligned}{OPENAGHMATHJAX}
+gdzie {OPENAGHMATHJAX()}\hskip 0.3pc c_1,\hskip 0.3pc c_2\hskip 0.3pc ,c_3\hskip 0.3pc{OPENAGHMATHJAX} są to dowolne stałe rzeczywiste.
+
+{OPENAGHEXAMPLE}
+
+
+Przykład ((Automatycznie|#przyklad2-liniejedno)) pokazuje, że jeżeli macierz {OPENAGHMATHJAX()}\hskip 0.3pc A\hskip 0.3pc{OPENAGHMATHJAX} ma wartości własne zespolone, to macierz {OPENAGHMATHJAX()}\hskip 0.3pc P\cdot e^{tJ}\hskip 0.3pc{OPENAGHMATHJAX} jest zespolona, natomiast macierz {OPENAGHMATHJAX()}\hskip 0.3pc P\cdot e^{tJ}\cdot P^{-1}\hskip 0.3pc{OPENAGHMATHJAX} jest rzeczywista, dlatego musimy wyznaczyć macierz {OPENAGHMATHJAX()}\hskip 0.3pc P^{-1},\hskip 0.3pc {OPENAGHMATHJAX} bo inaczej otrzymalibyśmy rozwiązanie zespolone układu.
+
+
+{openaghexercise name="" body="Wyznaczyć rozwiązanie ogólne układu równań:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}x^\prime(t)=A\cdot x(t),\hskip 1.3pc {\rm gdzie} \hskip 1.3pc  A=\begin{bmatrix}4&0&-1\\1&1&0\\3&-1&1\end{bmatrix} .{OPENAGHMATHJAX}" solution="Obliczamy wartości własne macierzy {OPENAGHMATHJAX()}\hskip 0.3pc A\hskip 0.3pc{OPENAGHMATHJAX}:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{vmatrix}4-\lambda &0&-1\\1&1-\lambda &0\\3&-1&1-\lambda\end{vmatrix}=(4-\lambda)(1-\lambda)^2+1+3(1-\lambda)=-(\lambda -2)^3=0{OPENAGHMATHJAX}
+zatem {OPENAGHMATHJAX()}\hskip 0.3pc \lambda=2\hskip 0.3pc{\rm jest}\hskip 0.3pc{OPENAGHMATHJAX}  3-krotną wartością własną macierzy  {OPENAGHMATHJAX()}\hskip 0.3pc A{OPENAGHMATHJAX}.
+Wyznaczymy podprzestrzeń własną odpowiadającą wartości własnej {OPENAGHMATHJAX()}\hskip 0.3pc \lambda=2.\hskip 0.3pc{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V^{(0)}=\{X:\hskip 0.8pc (A-2I)\cdot X=0,\hskip 0.3pc \}{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{bmatrix}2&0&-1\\1&-1&0\\3&-1&-1\end{bmatrix}\cdot \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}0\\0\\ 0\end{bmatrix}\Leftrightarrow \begin{cases}2x_1-x_3=0&\\x_1-x_2=0&\\3x_1-x_2-x_3=0&\end{cases}\Leftrightarrow \begin{cases}x_3=2x_1&\\x_2=x_1&\end{cases} {OPENAGHMATHJAX}
+zatem
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V^{(0)}=\left\lbrace \begin{bmatrix}x_1\\x_1\\2x_1\end{bmatrix}=\begin{bmatrix}1\\1\\2\end{bmatrix}x_1,\hskip 1.2pc  x_1\in\mathbb{R}\right\rbrace. {OPENAGHMATHJAX}
+Wymiar podprzestrzeni własnej {OPENAGHMATHJAX()}\hskip 0.3pc V^{(0)}\hskip 0.3pc{OPENAGHMATHJAX} jest równy __1__ i jest mniejszy od krotności wartości własnej. W związku z tym, wyznaczamy podprzestrzeń główną rzędu pierwszego
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V^{(1)}=\{X:\hskip 0.8pc (A-2I)^2\cdot X=0,\hskip 0.3pc \}{OPENAGHMATHJAX}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{bmatrix}1&1&-1\\1&1&-1\\2&2&-2\end{bmatrix}\cdot \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=\begin{bmatrix}0\\0\\0 \end{bmatrix}\Leftrightarrow \begin{cases}x_1+x_2-x_3=0&\\x_1+x_2-x_3=0&\\2x_1+2x_2-2x_3=0&\end{cases}\Leftrightarrow x_3=x_1+x_2{OPENAGHMATHJAX}
+zatem
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V^{(1)}=\left\lbrace \begin{bmatrix}x_1\\x_2\\x_1+x_2\end{bmatrix}=\begin{bmatrix}1\\0\\1\end{bmatrix}x_1+\begin{bmatrix}0\\1\\1 \end{bmatrix}x_2,\hskip 1.3pc  x_1,\hskip 0.3pc x_2\in\mathbb{R}\right\rbrace. {OPENAGHMATHJAX}
+Wymiar podprzestrzeni głównej rzędu pierwszego {OPENAGHMATHJAX()}\hskip 0.3pc V^{(1)}\hskip 0.3pc{OPENAGHMATHJAX} jest równy __2__ i jest mniejszy od krotności wartości własnej. W tej sytuacji wyznaczamy podprzestrzeń główną rzędu drugiego
+{OPENAGHMATHJAX(type="block" isNumeration="no")}V^{(2)}=\{X:\hskip 0.8pc (A-2I)^3\cdot X=0,\hskip 0.3pc \}.{OPENAGHMATHJAX}
+Ponieważ {OPENAGHMATHJAX()}\hskip 0.3pc (A-2I)^3=0,\hskip 0.3pc{OPENAGHMATHJAX}  więc  {OPENAGHMATHJAX()}\hskip 0.3pc V^{(2)}=\mathbb{R}^3.\hskip 0.3pc{OPENAGHMATHJAX}
+Bierzemy teraz dowolny wektor {OPENAGHMATHJAX()}\hskip 0.3pc v^{(2)}\in V^{(2)}\setminus V^{(1)}.\hskip 0.3pc{OPENAGHMATHJAX}  Niech {OPENAGHMATHJAX()}\hskip 0.3pc v^{(2)}=\begin{bmatrix}1\\0\\0\end{bmatrix}\hskip 0.3pc{OPENAGHMATHJAX}  wtedy
+{OPENAGHMATHJAX(type="block" isNumeration="no")}v^{(1)}=(A-2I)v^{(2)}=\begin{bmatrix}2&0&-1\\1&-1&0\\3&-1&-1\end{bmatrix}\cdot \begin{bmatrix}1\\0\\0\end{bmatrix}=\begin{bmatrix}2\\1\\3\end{bmatrix}{OPENAGHMATHJAX} i
+{OPENAGHMATHJAX(type="block" isNumeration="no")}v^{(0)}=(A-2I)v^{(1)}=\begin{bmatrix}2&0&-1\\1&-1&0\\3&-1&-1\end{bmatrix}\cdot \begin{bmatrix}2\\1\\3\end{bmatrix}=\begin{bmatrix}1\\1\\2\end{bmatrix}.{OPENAGHMATHJAX}
+Wektory {OPENAGHMATHJAX()}\hskip 0.3pc v^{(0)},\hskip 0.3pc v^{(1)}\hskip 0.3pc{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}\hskip 0.3pc v^{(2)}\hskip 0.3pc {OPENAGHMATHJAX}  są liniowo niezależne. Stąd wynika, że macierze {OPENAGHMATHJAX()}\hskip 0.3pc J\hskip 0.3pc{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}\hskip 0.3pc P\hskip 0.3pc{OPENAGHMATHJAX} są postaci:
+{OPENAGHMATHJAX(type="block" isNumeration="no")}J=\begin{bmatrix}2&1&0\\0&2&1\\0&0&2\end{bmatrix},\hskip 1.5pc  P=\begin{bmatrix}1&2&1\\1&1&0\\2&3&0\end{bmatrix}.{OPENAGHMATHJAX}
+Zatem macierz {OPENAGHMATHJAX()}\hskip 0.3pc  e^{tJ}\hskip 0.3pc{OPENAGHMATHJAX} jest następująca
+{OPENAGHMATHJAX(type="block" isNumeration="no")}e^{tJ}=\begin{bmatrix}e^{2t}&te^{2t}&\frac{1}{2}t^2e^{2t}\\0&e^{2t}&te^{2t}\\0&0&e^{2t}\end{bmatrix}{OPENAGHMATHJAX} i rozwiązanie ogólne rozważanego układu można zapisać następująco :
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned}\begin{bmatrix}x_1(t)\\x_2(t)\\x_3(t)\end{bmatrix}=&P\cdot e^{tJ}\cdot C= \begin{bmatrix}1&2&1\\1&1&0\\2&3&0 \end{bmatrix}\cdot \begin{bmatrix}e^{2t}&te^{2t}&\frac{1}{2}t^2e^{2t}\\0&e^{2t}&te^{2t}\\0&0&e^{2t}\end{bmatrix}\cdot \begin{bmatrix}c_1\\c_2\\c_3\end{bmatrix}=\\& \begin{bmatrix}e^{2t}&te^{2t}+2e^{2t}&\frac{1}{2}t^2e^{2t}+2te^{2t}+e^{2t}\\e^{2t}&te^{2t}+e^{2t}&\frac{1}{2}t^2e^{2t}+te^{2t}\\2e^{2t}&2te^{2t}+3e^{2t}&t^2e^{2t}+ 3te^{2t}\end{bmatrix}\cdot \begin{bmatrix}c_1\\	c_2\\c_3\end{bmatrix}.\end{aligned} {OPENAGHMATHJAX}
+gdzie {OPENAGHMATHJAX()}\hskip 0.3pc c_1,\hskip 0.3pc c_2,\hskip 0.3pc c_3\hskip 0.3pc {OPENAGHMATHJAX} są to dowolne stałe, należące do zbioru liczb rzeczywistych." anchor="Tu wpisz etykietę"}
+
+ 

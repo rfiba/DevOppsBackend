@@ -1,0 +1,76 @@
+Podamy twierdzenie, które podobnie jak ((Całkowanie przez części całek oznaczonych|#tw_1_cc |twierdzenie o całkowaniu przez części)), stanowi bardzo użyteczne narzędzie do obliczania całek oznaczonych.
+{openaghtheorem name="o całkowaniu przez podstawianie całek oznaczonych" assumptions="" thesis=" 
+Jeżeli {OPENAGHMATHJAX()}f:[a,b] \to \mathbb{R}{OPENAGHMATHJAX} jest funkcją ciągłą, natomiast {OPENAGHMATHJAX()}\varphi:[\alpha,\beta] \to [a,b]{OPENAGHMATHJAX} jest funkcją klasy {OPENAGHMATHJAX()}C^1{OPENAGHMATHJAX} taką, że {OPENAGHMATHJAX()}\varphi(\alpha)=a{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}\varphi(\beta)=b{OPENAGHMATHJAX}, to zachodzi równość
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\int\limits_a^b f(x) dx = \int\limits_{\alpha}^{\beta} f(\varphi(t))\varphi^{\prime}(t) dt.{OPENAGHMATHJAX}
+" anchor="tw_1_cp"}
+__DOWÓD__ 
+Skoro funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest ciągła, to posiada funkcję pierwotną {OPENAGHMATHJAX()}g{OPENAGHMATHJAX}, a zatem {OPENAGHMATHJAX()}f=g^{\prime}{OPENAGHMATHJAX}. W konsekwencji
+{OPENAGHMATHJAX(type="block" isNumeration="no")}f(\varphi(t))\varphi^{\prime}(t)=g^{\prime}(\varphi(t))\varphi^{\prime}(t)=(g \circ \varphi)^{\prime}(t),{OPENAGHMATHJAX}
+tak więc
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\begin{aligned} \int\limits_{\alpha}^{\beta} f(\varphi(t))\varphi^{\prime}(t) dt = \int\limits_{\alpha}^{\beta}(g \circ \varphi)^{\prime}(t) dt = g(\varphi(\beta))-g(\varphi(\alpha)) = g(b)- g(a)=\int_a^b f(x) dx.\end{aligned}{OPENAGHMATHJAX}
+Zauważmy, że w powyższych obliczeniach dwukrotnie użyliśmy twierdzenie Newtona-Leibniza, za pierwszym razem stosując je do funkcji podcałkowej {OPENAGHMATHJAX()}(g \circ \varphi)^{\prime}{OPENAGHMATHJAX} oraz jej funkcji pierwotnej {OPENAGHMATHJAX()}g \circ \varphi{OPENAGHMATHJAX}, a dalej do funkcji podcałkowej {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} oraz jej funkcji pierwotnej {OPENAGHMATHJAX()}g{OPENAGHMATHJAX}. Ponadto przedostatnia równość została uzyskana dzięki założeniu, że {OPENAGHMATHJAX()}\varphi(\alpha)=a{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}\varphi(\beta)=b{OPENAGHMATHJAX}.
+__CND.__ 
+
+Zastosujmy twierdzenie o całkowaniu przez podstawienie do obliczenia przykładowych całek oznaczonych.
+{OPENAGHEXAMPLE()}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\int\limits_0^1 \frac{x}{\sqrt{x^2+1}}dx =\left| \begin{array}{c}t=x^2+1 \\ dt=2x dx \\ \frac{1}{2}dt=x dx \end{array} \right|=\frac{1}{2} \int\limits_1^2 \frac{dt}{\sqrt{t}}=\sqrt{t}\Big|_1^2=\sqrt{2}-1.{OPENAGHMATHJAX}
+Zauważmy, że dokonaliśmy tu następującej zmiany wartości granic całkowania:
+
+$$$openaghTableAttributeS$$$anchor="etyk"&caption="Zmiana wartości granic całkowania, gdy {OPENAGHMATHJAX(type="inline" isNumeration="no")}(t=x^2+1) {OPENAGHMATHJAX}"$$$openaghTableAttributeE$$$
+|| \(x\) | \(0\) | \(1\) 
+\(t=x^2+1\) | \(1\) | \(2\) 
+||
+
+{OPENAGHEXAMPLE}
+
+{OPENAGHEXAMPLE()}
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\int\limits_{e^2}^{e^e} \frac{dx}{x \cdot \ln x \cdot \ln (\ln x)} =\left| \begin{array}{c} t= \ln x \\ dt=\frac{1}{x} dx \end{array} \right|=\int\limits_2^e \frac{dt}{t \ln t} = \left| \begin{array}{c} s=\ln t \\ ds=\frac{1}{t} dt \end{array} \right|=\int\limits_{\ln 2}^1 \frac{ds}{s} = \ln s \Big|_{\ln 2}^{1} = \Big(\ln 1 - \ln \ln 2\Big)=-\ln \ln 2.{OPENAGHMATHJAX}
+Zauważmy, że dokonaliśmy następujących zmian wartości granic całkowania:
+$$$openaghTableAttributeS$$$anchor=""&caption="Zmiana wartości granic całkowania, gdy {OPENAGHMATHJAX(type="inline")}t=\ln x{OPENAGHMATHJAX}"$$$openaghTableAttributeE$$$
+|| \(x\) | \(e^2\) | \(e^e\)   
+ \(t=\ln x\) | \(2\) | \(e\)   
+|| 
+oraz
+$$$openaghTableAttributeS$$$anchor=""&caption="Zmiana wartości granic całkowania, gdy {OPENAGHMATHJAX(type="inline")}s=\ln t{OPENAGHMATHJAX}"$$$openaghTableAttributeE$$$
+|| \(t\) | \(2\) | \(e\)   
+ \(s=\ln t\) | \(\ln 2\) | \(1\) 
+||
+
+{OPENAGHEXAMPLE}
+
+Na podstawie twierdzenia o całkowaniu przez podstawienie możemy sformułować natępujące wnioski.
+
+{OPENAGHCONCLUSION(name="o całce z funkcji parzystej w przedziale symetrycznym względem zera")} Jeżeli {OPENAGHMATHJAX()}a{OPENAGHMATHJAX} jest liczbą dodatnią, natomiast {OPENAGHMATHJAX()}f: [-a,a] \to \mathbb{R}{OPENAGHMATHJAX} jest parzystą funkcją ciągłą, to
+
+{OPENAGHMATHJAX(type="block"isNumeration="no")} \int\limits_{-a}^a f(x) dx = 2 \int\limits_0^a f(x) dx.{OPENAGHMATHJAX} {OPENAGHCONCLUSION}
+
+__DOWÓD__ 
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\int\limits_{-a}^a f(x) dx = \int\limits_{-a}^0 f(x) dx + \int\limits_0^a f(x) dx.{OPENAGHMATHJAX}
+Dokonując w pierwszej z całek występujących w powyższej sumie podstawienia {OPENAGHMATHJAX()}t=-x{OPENAGHMATHJAX} i stosownej zmiany granic całkowania
+$$$openaghTableAttributeS$$$anchor=""&caption="Zmiana wartości granic całkowania, gdy {OPENAGHMATHJAX(type="inline")}t=-x{OPENAGHMATHJAX}"$$$openaghTableAttributeE$$$
+||{OPENAGHMATHJAX()}x{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}-a{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}0{OPENAGHMATHJAX}   
+{OPENAGHMATHJAX()}t=-x{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}a{OPENAGHMATHJAX} | {OPENAGHMATHJAX()}0{OPENAGHMATHJAX} 
+|| 
+otrzymujemy
+{OPENAGHMATHJAX(type="block" isNumeration="no")}-\int\limits_a^0 f(-t) dt + \int\limits_0^a f(x) dx = \int\limits_0^a f(-t) dt + \int\limits_0^a f(x) dx=2\int\limits_0^a f(x) dx.{OPENAGHMATHJAX}
+Ostatnia równość wynika z faktu, że {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest funkcją parzystą oraz zamiany symbolu zmiennej całkowania z {OPENAGHMATHJAX()}t{OPENAGHMATHJAX} na {OPENAGHMATHJAX()}x{OPENAGHMATHJAX}.
+__CND.__ 
+
+{img fileId="1330" thumb="y" rel="box[g]"}
+
+Rozumując analogicznie jak powyżej, możemy otrzymać kolejny rezultat.
+{OPENAGHCONCLUSION(name="o całce z funkcji nieparzystej w przedziale symetrycznym względem zera")} Jeżeli {OPENAGHMATHJAX()}a{OPENAGHMATHJAX} jest liczbą dodatnią, natomiast {OPENAGHMATHJAX()}f: [-a,a] \to \mathbb{R}{OPENAGHMATHJAX} jest nieparzystą funkcją ciągłą, to
+
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\int\limits_{-a}^a f(x) dx = 0.{OPENAGHMATHJAX} {OPENAGHCONCLUSION}
+
+{img fileId="1331" thumb="y" rel="box[g]"}
+
+Powyższe wnioski mają dość duże znaczenie w praktycznych obliczeniach, gdyż niejednokrotnie prościej jest znaleźć wartość funkcji pierwotnej w zerze niż w {OPENAGHMATHJAX()}-a{OPENAGHMATHJAX}. W szczególności powyższy wniosek pozwala natychmiast podać wartość liczbową niektórych całek bez konieczności przeprowadzania złożonych rachunków.
+
+{OPENAGHEXAMPLE()}
+Możemy stwierdzić, że
+{OPENAGHMATHJAX(type="block" isNumeration="no")}\int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \sin^7 x dx=0,{OPENAGHMATHJAX}
+ponieważ całkujemy po przedziale, który jest symetryczny względem zera, a funkcja sinus jest w nim nieparzysta.
+{OPENAGHEXAMPLE}
+
+

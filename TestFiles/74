@@ -1,0 +1,40 @@
+ 
+
+*Wyrażenie {OPENAGHMATHJAX()}{v=\frac{x-x_{{0}}}{t-t_{{0}}}}{OPENAGHMATHJAX} opisuje prędkość w ruchu jednostajnym po linii prostej i również jest prawdziwe dla prędkości średniej.
+ 
+
+*Prędkość chwilowa jest pochodną drogi względem czasu {OPENAGHMATHJAX()}{v=\frac{\mathit{dx}}{\mathit{dt}}}{OPENAGHMATHJAX}.
+ 
+
+*W ruchu ze stałym przyspieszeniem mamy {OPENAGHMATHJAX()}{v=v_{{0}}+at}{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}{x=x_{{0}}+v_{{0}}t+\frac{at^{{2}}}{2}}{OPENAGHMATHJAX}.
+ 
+
+*Przyspieszenie chwilowe jest równe {OPENAGHMATHJAX()}{{\bf a}=\frac{\mathit{d{\bf v}}}{\mathit{dt}}}{OPENAGHMATHJAX}.
+ 
+
+*W rzucie ukośnym ze stałym przyspieszeniem {OPENAGHMATHJAX()}-{OPENAGHMATHJAX}{OPENAGHMATHJAX()}G{OPENAGHMATHJAX} (w kierunku pionowym) tor ruchu ciała jest parabolą {OPENAGHMATHJAX()}{y=(tg\theta)\;x-\frac{g}{2\;(v_{{0}}\text{cos}\theta)^{{2}}}\;x^{{2}}}{OPENAGHMATHJAX} .
+ 
+
+*Przyspieszenie dośrodkowe w ruchu jednostajnym po okręgu wynosi {OPENAGHMATHJAX()}{a_{{r}}=\frac{v^{{2}}}{r}}{OPENAGHMATHJAX} lub {OPENAGHMATHJAX()}{a_{{r}}=\frac{4\pi^{{2}}r}{T^{{2}}}}{OPENAGHMATHJAX} .
+ 
+
+*Jeżeli na ciało o masie {OPENAGHMATHJAX()}m{OPENAGHMATHJAX} działa siła wypadkowa {OPENAGHMATHJAX()}F{OPENAGHMATHJAX} {OPENAGHMATHJAX()}_{wyp}{OPENAGHMATHJAX} to ruch ciał można przewidzieć posługując się zasadami dynamiki Newtona; 1) {OPENAGHMATHJAX()}{\bf a}=0{OPENAGHMATHJAX}, gdy {OPENAGHMATHJAX()}{\bf F}_{\text{wyp}}=0{OPENAGHMATHJAX} ; 2) {OPENAGHMATHJAX()}{{\bf F}_{{\text{wyp}}}=\frac{\mathit{d{\bf p}}}{\mathit{dt}}=\mathit{m{\bf a}}}{OPENAGHMATHJAX} gdy {OPENAGHMATHJAX()}m = const.{OPENAGHMATHJAX} pęd {OPENAGHMATHJAX()}{\bf p}=m{\bf v}{OPENAGHMATHJAX} ;3) {OPENAGHMATHJAX()}{{\bf F}_{{1\rightarrow 2}}=-{\bf F}_{{2\rightarrow 1}}}{OPENAGHMATHJAX}.
+ 
+
+*Pierwsza zasada dynamiki stwierdza, że jeżeli na ciało nie działają siły zewnętrzne to istnieje taki układ odniesienia, w którym to ciało spoczywa lub porusza się ruchem jednostajnym prostoliniowym. Taki układ nazywamy układem inercjalnym.
+ 
+
+*Maksymalna siła tarcia statycznego jest równa sile, którą musimy przyłożyć, żeby ruszyć ciało z miejsca.
+ 
+
+*W układach poruszających się z przyspieszeniem uwzględniamy, że na każde ciało działa siła bezwładności {OPENAGHMATHJAX()}{\bf F}_b{OPENAGHMATHJAX} wprost proporcjonalna do masy ciała oraz do przyspieszenia układu {OPENAGHMATHJAX()}{\bf a}_0{OPENAGHMATHJAX} i jest do niego skierowana przeciwnie {OPENAGHMATHJAX()}{{\bf F}_{{b}}=-\mathit{m{\bf a}}_{{0}}}{OPENAGHMATHJAX}.
+ 
+
+*Prawo powszechnego ciążenia {OPENAGHMATHJAX()}{F=G\frac{m_{{1}}m_{{2}}}{r^{{2}}}}{OPENAGHMATHJAX} stosuje się do wszystkich sił grawitacyjnych.
+ 
+
+*Prawa Keplera: 1) Każda planeta krąży po orbicie eliptycznej, ze Słońcem w jednym z ognisk tej elipsy; 2) Linia łącząca Słońce i planetę zakreśla równe pola w równych odstępach czasu; 3) Sześciany półosi wielkich orbit dowolnych dwóch planet mają się do siebie jak kwadraty ich okresów obiegu (półoś wielka jest połową najdłuższej cięciwy elipsy).
+ 
+
+*Wektor natężenia pola grawitacyjnego {OPENAGHMATHJAX()}{\gamma ({\bf r})=\frac{{\bf F}}{m}=-G\frac{M}{r^{{3}}}{\bf r}}{OPENAGHMATHJAX} charakteryzuje przestrzeń otaczającą źródło siły grawitacyjnej (masę {OPENAGHMATHJAX()}M{OPENAGHMATHJAX}).
+ 

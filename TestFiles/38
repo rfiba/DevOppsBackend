@@ -1,0 +1,49 @@
+W module tym wprowadzimy dwie wielkości wektorowe o zasadniczym znaczeniu dla opisu ruchu obrotowego - __moment siły__ i __moment pędu__, obie powiązanie drugą zasadą dynamiki Newtona dla ruchu obrotowego.
+
+!!!#Moment siły
+
+Jak wynika z naszego codziennego doświadczenia w ruchu obrotowym ważna jest nie tylko wartość siły, ale to gdzie i pod jakim kątem jest ona przyłożona. Na przykład, drzwi najłatwiej jest otworzyć przykładając siłę na ich zewnętrznej krawędzi i pod kątem prostym do płaszczyzny drzwi. Siła przyłożona wzdłuż płaszczyzny drzwi jak i siła przyłożona w miejscu zawiasów nie pozwalają na ich obrót. Dla ruchu obrotowego wielkością, która odgrywa rolę analogiczną do siły w ruchu postępowym jest moment siły (tzw. moment obrotowy) {OPENAGHMATHJAX()} {\bf \unicode[Times]{x3C4}}{OPENAGHMATHJAX}, zdefiniowany następująco:
+
+{OPENAGHDEFINITION( name="moment siły")}
+Jeżeli siła __F__ jest przyłożona w punkcie którego położenie opisuje wektor wodzący __r__ to moment {OPENAGHMATHJAX()}{\bf \unicode[Times]{x3C4}}{OPENAGHMATHJAX} siły __F__ względem początku układu współrzędnych 
+{OPENAGHMATHJAX()}{\bf \unicode[Times]{x3C4}} = {\bf r} \times {\bf F}{OPENAGHMATHJAX}{OPENAGHDEFINITION}
+Moment siły jest wielkością wektorową, której wartość bezwzględna wynosi
+
+{OPENAGHMATHJAX( type="
+block
+")}\begin{equation}{\tau =\text{rF}\text{sin}\theta }\end{equation}{OPENAGHMATHJAX}
+
+Wielkość r nazywamy ramieniem siły. Z równania (11.6) wynika, że tylko składowa siły prostopadła do ramienia {OPENAGHMATHJAX()}{F_{\bot}=F\text{sin}\theta }{OPENAGHMATHJAX} wpływa na moment siły.
+
+!!!#Moment pędu
+
+Zdefiniujmy wielkość, która w ruchu obrotowym odgrywa rolę analogiczną do pędu. Wielkość __L__ nazywamy momentem pędu i definiujemy jako:
+
+{OPENAGHDEFINITION( name="Moment pędu")}{OPENAGHMATHJAX()}{\bf L} = {\bf r} \times {\bf p} {OPENAGHMATHJAX}{OPENAGHDEFINITION}
+
+gdzie __p__ jest pędem punktu materialnego, a __r__ reprezentuje jego położenie względem wybranego inercjalnego układu odniesienia. Wartość __L__ wynosi
+
+{OPENAGHMATHJAX()}L = r p \cos(\theta){OPENAGHMATHJAX} 
+
+Istnieje bezpośrednia zależność pomiędzy momentem siły i momentem pędu. Żeby ją wyprowadzić zróżniczkujmy obie strony równania:
+
+{OPENAGHMATHJAX( type="
+block
+")}\frac{d{\bf L}}{dt}=\frac{d}{dt}\left({\bf r}\times {\bf p}\right)=\frac{d{\bf r}}{dt}\times {\bf p}+{\bf r}\times\frac{d{\bf p}}{dt} = {\bf v}\times {\bf p}+{\bf r}\times {\bf F}_{{\text{wyp}}}{OPENAGHMATHJAX}
+
+Ponieważ wektory __v__ oraz __p__ są równoległe to ich iloczyn wektorowy jest równy zeru. Natomiast drugi składnik równania jest zgodnie z definicją (REF) wypadkowym momentem siły. Otrzymujemy więc
+
+{OPENAGHMATHJAX( type="
+block
+")}{\bf \unicode[Times]{x3C4}}_{\text{wyp}}=\frac{d{\bf L}}{dt}{OPENAGHMATHJAX} 
+
+{OPENAGHRULE( name="Druga zasada dynamiki dla ruchu obrotowego")}Wypadkowy moment siły działający na punkt materialny jest równy prędkości zmian momentu pędu.{OPENAGHRULE} 
+
+To jest sformułowanie drugiej zasady dynamiki ruchu obrotowego. Równanie (11.10) jest analogiczne do równania (4.6) dla ruchu postępowego.
+Analogicznie możemy sformułować pierwszą zasadę dynamiki ruchu obrotowego
+
+{OPENAGHRULE( name="Pierwsza zasada dynamiki dla ruchu obrotowego")}Ciało sztywne, na które nie działa moment siły pozostaje w spoczynku lub porusza się ruchem obrotowym jednostajnym.{OPENAGHRULE} 
+
+oraz trzecią zasadę dynamiki ruchu obrotowego
+
+{OPENAGHRULE( name="Trzecia zasada dynamiki dla ruchu obrotowego")}Jeżeli dwa ciała oddziałują wzajemnie, to moment siła z jakim działa ciało drugie na ciało pierwsze jest równy i przeciwnie skierowany do momentu siły, z jakim ciało pierwsze działa na drugie.{OPENAGHRULE}

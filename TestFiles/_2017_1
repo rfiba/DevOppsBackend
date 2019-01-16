@@ -1,0 +1,76 @@
+Zauważmy, że zgodnie z równaniem ((Siła magnetyczna|#r22.1|Siła magnetyczna (1))) wektor siły {OPENAGHMATHJAX()}\mathbf{F}{OPENAGHMATHJAX} działającej na naładowaną cząstkę poruszającą się w polu magnetycznym jest zawsze prostopadły do wektora prędkości {OPENAGHMATHJAX()}\mathbf{v}{OPENAGHMATHJAX} i wektora {OPENAGHMATHJAX()}\mathbf{B}{OPENAGHMATHJAX}. Oznacza to, że siła {OPENAGHMATHJAX()}F{OPENAGHMATHJAX} nie może zmienić wartości prędkości {OPENAGHMATHJAX()}v{OPENAGHMATHJAX}, a co za tym idzie nie może zmienić energii kinetycznej cząstki. Siła {OPENAGHMATHJAX()}F{OPENAGHMATHJAX} może jedynie zmienić kierunek prędkości {OPENAGHMATHJAX()}v{OPENAGHMATHJAX}, zakrzywić tor jej ruchu. Siła magnetyczna jest więc siłą dośrodkową.
+
+Żeby prześledzić tor ruchu naładowanej cząstki w polu magnetycznym rozpatrzmy cząstkę, która z prędkością {OPENAGHMATHJAX()}v{OPENAGHMATHJAX} wpada do jednorodnego stałego pola magnetycznego o indukcji {OPENAGHMATHJAX()}B{OPENAGHMATHJAX} tak jak na ((Ruch naładowanych cząstek w polu magnetycznym|#rys22.4)).
+
+{img type="fileId" fileId="710" anchor="rys22.4"}
+
+Prędkość początkową cząstki (z którą wlatuje w obszar pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX}) możemy rozłożyć na dwie składowe: jedną równoległą {OPENAGHMATHJAX()}{v_{{\text{II}}}}{OPENAGHMATHJAX}, a drugą prostopadłą {OPENAGHMATHJAX()}v_{⊥}{OPENAGHMATHJAX} do pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX}. Zauważmy, że zgodnie ze wzorem ((Siła magnetyczna|#r22.2|Siła magnetyczna-( 2 ))) siła magnetyczna związana jest tylko ze składową prędkości prostopadłą do pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX} ({OPENAGHMATHJAX()}\theta  = 90º{OPENAGHMATHJAX}) natomiast nie zależy od składowej równoległej do pola ({OPENAGHMATHJAX()}\theta = 0º{OPENAGHMATHJAX}). Siła magnetyczna zmienia więc tylko składową prędkości prostopadłą do pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX}, natomiast składowa prędkości równoległa pozostaje stała. W rezultacie cząstka przemieszcza się ze stałą prędkością wzdłuż pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX} równocześnie zataczając pod wpływem siły magnetycznej okręgi w płaszczyźnie prostopadłej do pola. Cząsteczka porusza się po spirali tak jak pokazano na ((Ruch naładowanych cząstek w polu magnetycznym|#rys22.5|Rys. 2)).
+
+{img type="fileId" fileId="717" anchor="rys22.5"}
+ 
+{openaghsimulation fileId="1364"}
+
+{openaghexercise name="Ruch ładunku w polu magnetycznym" body="
+Teraz spróbuj opisać ruch ładunku {OPENAGHMATHJAX()}q{OPENAGHMATHJAX}, który porusza się z prędkością {OPENAGHMATHJAX()}v{OPENAGHMATHJAX} prostopadle do pola magnetycznego {OPENAGHMATHJAX()}B{OPENAGHMATHJAX}.
+Wskazówka: Ponieważ prędkość jest prostopadła do pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX} to tor cząstki jest okręgiem leżącym w płaszczyźnie prostopadłej do pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX}. Oblicz promień tego okręgu i częstotliwość z jaką krąży ładunek.
+{OPENAGHMATHJAX()}R = {OPENAGHMATHJAX}
+{OPENAGHMATHJAX()}T = {OPENAGHMATHJAX} 
+" solution="
+Dane: 
+{OPENAGHMATHJAX()}q{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}v{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}B{OPENAGHMATHJAX}.
+
+Ładunek poruszający się w jednorodnym polu magnetycznym, prostopadle do pola {OPENAGHMATHJAX()}B{OPENAGHMATHJAX}, krąży po okręgu. Siła magnetyczna jest siłą dośrodkową w tym ruchu {OPENAGHMATHJAX()}F_{dośr.} = F_{magn.}{OPENAGHMATHJAX} więc
+
+{OPENAGHMATHJAX()}\begin{equation}\frac{\mathit{mv}^{{2}}}{R}=\mathit{qvB}\text{sin}\theta\end{equation}{OPENAGHMATHJAX}
+
+Promień okręgu obliczamy wprost z powyższego równania uwzględniając, że
+{OPENAGHMATHJAX()}\theta = 90º{OPENAGHMATHJAX} ( {OPENAGHMATHJAX()}{v\perp B}{OPENAGHMATHJAX})
+
+{OPENAGHMATHJAX()}\begin{equation}{R=\frac{\mathit{mv}}{{qB}}}\end{equation}{OPENAGHMATHJAX}
+
+Częstotliwość {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} (odwrotność okresu {OPENAGHMATHJAX()}T{OPENAGHMATHJAX}) z jaką krąży ładunek obliczamy ze wzoru
+
+{OPENAGHMATHJAX()}\begin{equation}{f=\frac{1}{T}=\frac{1}{\frac{2\mathit{\pi R}}{v}}=\frac{v}{2\mathit{\pi R}}=\frac{{qB}}{2\mathit{\pi m}}}\end{equation}{OPENAGHMATHJAX}
+
+gdzie podstawiono obliczoną wcześniej wartość {OPENAGHMATHJAX()}R{OPENAGHMATHJAX}. Zauważmy, że częstotliwość (a tym samym okres) nie zależy od {OPENAGHMATHJAX()}R{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}v{OPENAGHMATHJAX}.
+" anchor="cw22.2"}
+
+Zjawisko odchylania toru naładowanych cząstek w polu magnetycznym znalazło szerokie zastosowanie w technice i nauce. Jednym z przykładów jest lampa kineskopowa w telewizorze czy monitorze. Na ((Ruch naładowanych cząstek w polu magnetycznym|#rys22.6|Rys. 3)) pokazany jest przykładowy tor wiązki elektronów w lampie.
+
+{img type="fileId" fileId="724" anchor="rys22.6"}
+
+W kineskopie pole magnetyczne jest przyłożone wzdłuż kierunku {OPENAGHMATHJAX()}x{OPENAGHMATHJAX} i w kierunku {OPENAGHMATHJAX()}y{OPENAGHMATHJAX}. Pole {OPENAGHMATHJAX()}B_{x}{OPENAGHMATHJAX}, w zależności od zwrotu ({OPENAGHMATHJAX()}+x{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}-x{OPENAGHMATHJAX}) odchyla elektrony w górę lub w dół ekranu, natomiast pole {OPENAGHMATHJAX()}B_{y}{OPENAGHMATHJAX}, w zależności od zwrotu ({OPENAGHMATHJAX()}+y{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}-y{OPENAGHMATHJAX}) odchyla wiązkę elektronów w prawo lub w lewo. W ten sposób sterujemy wiązką elektronów, która przebiega (skanuje) cały ekran docierając do każdego punktu ekranu (piksela).
+
+Innym przykład stanowi spektrometr masowy, którego schemat jest pokazany na ((Ruch naładowanych cząstek w polu magnetycznym|#rys22.7|Rys. 4)).
+
+{img type="fileId" fileId="706" anchor="rys22.7"}
+
+Cząstka (jon) o masie {OPENAGHMATHJAX()}m{OPENAGHMATHJAX} i ładunku {OPENAGHMATHJAX()}q{OPENAGHMATHJAX} wyemitowana ze źródła Z zostaje przyspieszona napięciem {OPENAGHMATHJAX()}U{OPENAGHMATHJAX} po czym wlatuje w obszar jednorodnego pola magnetycznego {OPENAGHMATHJAX()}B{OPENAGHMATHJAX} prostopadłego do toru cząstki. (Pamiętaj, że symbol {OPENAGHMATHJAX()}\odot{OPENAGHMATHJAX} oznacza wektor skierowany przed płaszczyznę rysunku, a symbolem ⊗ oznaczamy wektor skierowany za płaszczyznę rysunku). Pole magnetyczne zakrzywia tor cząstki, tak że porusza się ona po półokręgu o promieniu {OPENAGHMATHJAX()}R{OPENAGHMATHJAX}, po czym zostaje zarejestrowana w detektorze (np. na kliszy fotograficznej) w odległości {OPENAGHMATHJAX()}2R{OPENAGHMATHJAX} od miejsca wejścia w pole magnetyczne.
+
+Promień okręgu po jakim porusza się naładowana cząstka w polu {OPENAGHMATHJAX()}B{OPENAGHMATHJAX} obliczyliśmy w ostatnim ćwiczeniu
+
+{OPENAGHMATHJAX( type="block" anchor="r22.3")}\begin{equation}{R=\frac{\mathit{mv}}{{qB}}}\end{equation}{OPENAGHMATHJAX}
+
+gdzie {OPENAGHMATHJAX()}v{OPENAGHMATHJAX} jest prędkością z jaką porusza się cząstka. Tę prędkość uzyskuje ona dzięki przyłożonemu napięciu {OPENAGHMATHJAX()}U{OPENAGHMATHJAX}. Zmiana energii potencjalnej ładunku przy pokonywaniu różnicy potencjału {OPENAGHMATHJAX()}U{OPENAGHMATHJAX} jest równa energii kinetycznej jaką uzyskuje ładunek
+
+{OPENAGHMATHJAX( type="block" anchor="r22.4")}\begin{equation}{\mathit{\Delta E}_{{k}}=\mathit{\Delta E}_{{p}}}\end{equation}{OPENAGHMATHJAX}
+
+lub
+
+{OPENAGHMATHJAX( type="block" anchor="r22.5")}\begin{equation}{\frac{\mathit{mv}^{{2}}}{2}={qU}}\end{equation}{OPENAGHMATHJAX}
+
+Stąd otrzymujemy wyrażenie na prędkość {OPENAGHMATHJAX()}v{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX( type="block" anchor="r22.6")}\begin{equation}{v=\sqrt{\frac{2{qU}}{m}}}\end{equation}{OPENAGHMATHJAX}
+
+i podstawiamy je do równania ((Ruch naładowanych cząstek w polu magnetycznym|#r22.3|( 1 )))
+
+{OPENAGHMATHJAX( type="block" anchor="r22.7")}\begin{equation}{R=\frac{1}{B}\sqrt{\frac{2\text{mU}}{q}}}\end{equation}{OPENAGHMATHJAX}
+
+Ostatecznie po przekształceniu otrzymujemy
+
+{OPENAGHMATHJAX( type="block" anchor="r22.8")}\begin{equation}{m=\frac{R^{{2}}B^{{2}}q}{2U}}\end{equation}{OPENAGHMATHJAX}
+
+Widzimy, że pomiar odległości ({OPENAGHMATHJAX()}2R{OPENAGHMATHJAX}), w jakiej została zarejestrowana cząstka pozwala na wyznaczenie jej masy m.
+
+Zakrzywianie toru cząstek w polu magnetycznym jest również wykorzystywane w urządzeniach zwanych akceleratorami. Te urządzenia służące do przyspieszania cząstek naładowanych, znalazły szerokie zastosowanie w nauce, technice i medycynie. Przykładem akceleratora cyklicznego jest cyklotron. O jego działaniu możesz przeczytać w module ((Cyklotron)).

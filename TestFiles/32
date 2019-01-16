@@ -1,0 +1,128 @@
+ 
+
+{OPENAGHDEFINITION( name="(złożenia funkcji)")}
+
+__Złożeniem funkcji {OPENAGHMATHJAX()}f:X\to Y{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}g:Z\to W{OPENAGHMATHJAX}__, gdzie {OPENAGHMATHJAX()}Y\subset Z{OPENAGHMATHJAX} nazywamy funkcję oznaczoną {OPENAGHMATHJAX()}g\circ f{OPENAGHMATHJAX}, określoną następująco {OPENAGHMATHJAX()}g\circ f:X\to W{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}g\circ f(x)=g(f(x)){OPENAGHMATHJAX}, dla każdego {OPENAGHMATHJAX()}x\in X{OPENAGHMATHJAX}.
+
+__Funkcję {OPENAGHMATHJAX()}f{OPENAGHMATHJAX}__ nazywamy wówczas __funkcja, wewnętrzną__, a __funkcję {OPENAGHMATHJAX()}g{OPENAGHMATHJAX} funkcja zewnętrzną złożoną {OPENAGHMATHJAX()}g\circ f{OPENAGHMATHJAX}.{OPENAGHDEFINITION}
+ 
+
+{img type="fileId" fileId="156"}
+ 
+
+
+Rys. F35. Ilustracja złożenia funkcji.
+
+{OPENAGHEXAMPLE( name="")}
+
+Dane są funkcje:
+
+{OPENAGHMATHJAX()}f:\mathbb R\to\mathbb R,\quad f(x)=x+1,{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}g:\mathbb\to \mathbb R,\quad g(x)=3x^2+2x{OPENAGHMATHJAX}
+
+Utworzymy złożenia {OPENAGHMATHJAX()}g\circ f{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}f\circ g{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}f\circ f{OPENAGHMATHJAX}
+
+__Rozwiązanie__
+
+W naszym przykładzie wszystkie zbiory występujące w definicji złożenia są równe {OPENAGHMATHJAX()}X=Y=Z=W=R{OPENAGHMATHJAX}.
+
+Obliczamy
+
+{OPENAGHMATHJAX()}(g\circ f)(x)=g(f(x))=g(x+1)=3(x+1)^2+2(x+1)=3x^2+8x+5, {OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}(f\circ g)(x)=f(g(x))=f(3x^2+2x)=3x^2+2x+1,{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}(f\circ f)(x)=f(f(x))=f(x+1)=x+1+1=x+2.{OPENAGHMATHJAX}
+
+Mamy, więc
+
+{OPENAGHMATHJAX()}g\circ f:\mathbb R\to\mathbb R,\quad (g\circ f)(x)=3x^2+8x+5,{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}f\circ g:\mathbb R\to\mathbb R,\quad (f\circ g)(x)=3x^2+2x+1,{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}f\circ f:\mathbb R\to\mathbb R,\quad (f\circ f)(x)=x+2.{OPENAGHMATHJAX}{OPENAGHEXAMPLE}
+ 
+
+{OPENAGHANNOTATION( name="")}
+
+Jak widać z powyższego przykładu, składanie funkcji jest __operacją nieprzemienną__.{OPENAGHANNOTATION}
+
+{OPENAGHANNOTATION( name="(warunek złożenia funkcji)")}
+
+Jeżeli funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} oraz {OPENAGHMATHJAX()}g{OPENAGHMATHJAX} podane są jedynie za pomocą wzorów, wówczas jest możliwe ich złożenie {OPENAGHMATHJAX()}g\circ f{OPENAGHMATHJAX}, jeśli tylko niepusty jest zbiór {OPENAGHMATHJAX()}\{x\in \mathbb R:\quad x\in D_f~{\textrm i}~f(x)\in D_g\}{OPENAGHMATHJAX}. Zbiór ten jest wówczas dziedziną (naturalną) złożenia.{OPENAGHANNOTATION}
+
+{OPENAGHEXAMPLE( name="")}
+
+Niech {OPENAGHMATHJAX()}f(x)=\log x{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}g(x)=3x+5{OPENAGHMATHJAX}. Utworzymy kolejno złożenia {OPENAGHMATHJAX()}f\circ g{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}g\circ f{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}f\circ f {OPENAGHMATHJAX} podając ich wzory i dziedziny.
+
+__Rozwiązanie__
+
+__ad__ {OPENAGHMATHJAX()}f\circ g{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}(f\circ g)(x)=f(g(x))=f(3x+5)=\log(3x+5),{OPENAGHMATHJAX}
+{OPENAGHMATHJAX()}D_{f\circ g}=\{x\in\mathbb R:\quad x\in D_g~{\textrm i}~g(x)\in D_f\},
+{OPENAGHMATHJAX}{OPENAGHMATHJAX()}D_g=\mathbb R,\quad D_f=(0,+\infty).{OPENAGHMATHJAX}
+
+Mamy więc
+
+{OPENAGHMATHJAX()}x\in\mathbb R\quad{\textrm i}\quad 3x+5>0,~~{\textrm czyli}~~x>-{5\over 3}.{OPENAGHMATHJAX}
+
+__Odpowiedź__
+
+{OPENAGHMATHJAX()}(f\circ g)(x)=\log(3x+5),\quad D_{f\circ g}=({-5\over 3},+\infty).{OPENAGHMATHJAX}
+
+__ad__ {OPENAGHMATHJAX()}g\circ f{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}(g\circ f)(x)=g(f(x))=g(\log x)=3\log x+5,{OPENAGHMATHJAX}
+{OPENAGHMATHJAX()}D_{g\circ f}=\{x\in\mathbb R:\quad x\in D_f~{\textrm i}~f(x)\in D_g\},{OPENAGHMATHJAX}{OPENAGHMATHJAX()}D_f=(0,\infty),\quad D_g=\mathbb R.{OPENAGHMATHJAX}
+Mamy więc {OPENAGHMATHJAX()}x>0{OPENAGHMATHJAX}.
+
+__Odpowiedź__
+
+{OPENAGHMATHJAX()}(g\circ f)(x)=3\log x+5,\quad (0,\infty){OPENAGHMATHJAX}
+
+__ad__ {OPENAGHMATHJAX()}f\circ f:{OPENAGHMATHJAX}
+
+{OPENAGHMATHJAX()}(f\circ f)(x)=f(f(x))=f(\log x)=\log(\log x),{OPENAGHMATHJAX}
+{OPENAGHMATHJAX()}D_{f\circ f}=\{x\in\mathbb R:\quad x\in D_f\quad {\textrm i}\quad f(x)\in D_f\}.{OPENAGHMATHJAX}
+
+Mamy więc {OPENAGHMATHJAX()}x>0{OPENAGHMATHJAX} i {OPENAGHMATHJAX()}\log x>0{OPENAGHMATHJAX}, {OPENAGHMATHJAX()}\log x>\log 1{OPENAGHMATHJAX}, czyli {OPENAGHMATHJAX()}x>1{OPENAGHMATHJAX} (korzystamy z faktu, że funkcja logarytmiczna {OPENAGHMATHJAX()}\log_10x{OPENAGHMATHJAX} jest rosnąca, gdyż podstawa logarytmu równa się {OPENAGHMATHJAX()}10{OPENAGHMATHJAX} i jest większa od jedynki).
+
+__Odpowiedź__
+
+{OPENAGHMATHJAX()}(f\circ f)(x)=\log(\log x),\quad D_{f\circ f}=(1,\infty).{OPENAGHMATHJAX}{OPENAGHEXAMPLE}
+ 
+
+{openaghtheorem name="(o monotoniczności złożeń)" assumptions="" thesis="
+Złożenie dwóch funkcji rosnących jest funkcją rosnącą.
+Złożenie dwóch funkcji malejących jest funkcją rosnącą. 
+Złożenie funkcji rosnącej i malejącej w dowolnej kolejności jest funkcją malejącą."}
+
+{OPENAGHEXAMPLE( name="")}
+
+Zbadamy monotoniczność danej funkcji i określimy rodzaj jej monotoniczności. 
+
+Pokażemy, że funkcja {OPENAGHMATHJAX()}f(x)=\left({1\over 3}\right)^{2(1-x)^5}{OPENAGHMATHJAX} jest funkcją rosnącą.
+
+__Rozwiązanie__
+
+Funkcję {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} potraktujemy jako funkcję złożoną z trzech funkcji 
+{OPENAGHMATHJAX()}f=f_3\circ f_2\circ f_1{OPENAGHMATHJAX}.  Kładziemy:
+
+{OPENAGHMATHJAX()}f_1(x)=1-x{OPENAGHMATHJAX}, 
+
+{OPENAGHMATHJAX()}f_2(x)=2x^5{OPENAGHMATHJAX},
+
+{OPENAGHMATHJAX()}f_3(x)=\left({1\over 3}\right)^x.{OPENAGHMATHJAX}
+
+Sprawdzimy, czy dobrze określiliśmy funkcje składowe.
+
+{OPENAGHMATHJAX()}(f_3\circ f_2\circ f_1)(x)=f_3(f_2(f_1(x)))=f_3(f_2(1-x))=f_3(2(1-x)^5)=\left({1\over 3}\right)^{2(1-x)^5}=f(x).{OPENAGHMATHJAX}
+
+Z łatwością określamy monotoniczność funkcji składowych. Funkcja {OPENAGHMATHJAX()}f_1{OPENAGHMATHJAX} jest funkcją malejącą, {OPENAGHMATHJAX()}f_2{OPENAGHMATHJAX} jest funkcją rosnącą, zatem ich złożenie {OPENAGHMATHJAX()}f_2\circ f_1{OPENAGHMATHJAX} jest funkcją malejącą. Funkcja {OPENAGHMATHJAX()}f_3{OPENAGHMATHJAX}  jest funkcja malejąca (jako funkcja wykładnicza o podstawie z przedziału {OPENAGHMATHJAX()}(0,1){OPENAGHMATHJAX} ułamkowej) więc jej złożenie z funkcja malejącą {OPENAGHMATHJAX()}f_2\circ f_1{OPENAGHMATHJAX} jest funkcją rosnącą. A to złożenie {OPENAGHMATHJAX()}f_3\circ (f_2\circ f_1)=f_3\circ f_2\circ f_1{OPENAGHMATHJAX} jest badaną funkcją {OPENAGHMATHJAX()}f{OPENAGHMATHJAX}.
+
+__Odpowiedź__
+
+Funkcja {OPENAGHMATHJAX()}f{OPENAGHMATHJAX} jest rosnąca.{OPENAGHEXAMPLE}
+ 
